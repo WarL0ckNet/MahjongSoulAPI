@@ -350,10 +350,10 @@ if (!args || args.help) {
 						};
 					}
 					if (fields.length > 0) {
-						doc += "|#|Field name|Field type|\n|:-:|-|-|\n";
+						doc += "#|Field name|Field type\n-|-|-\n";
 						for (let i = 1; i <= fields.length; i++) {
 							if (fields[i]) {
-								doc += `|${i}|${fields[i].name}|${(types.test(fields[i].type) ? fields[i].type : '['+fields[i].type+'](#'+fields[i].type+')')}|\n`;
+								doc += `${i}|${fields[i].name}|${(types.test(fields[i].type) ? fields[i].type : '['+fields[i].type+'](#'+fields[i].type+')')}\n`;
 							}
 						}
 					} else {
