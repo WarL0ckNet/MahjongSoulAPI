@@ -3,7 +3,7 @@
 ## NotifyRoomGameStart
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | game_url | string |
 | 2 | connect_token | string |
 | 3 | game_uuid | string |
@@ -12,7 +12,7 @@
 ## NotifyMatchGameStart
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | game_url | string |
 | 2 | connect_token | string |
 | 3 | game_uuid | string |
@@ -22,21 +22,21 @@
 ## NotifyRoomPlayerReady
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | account_id | uint32 |
 | 2 | ready | bool |
 
 ## NotifyRoomPlayerDressing
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | account_id | uint32 |
 | 2 | dressing | bool |
 
 ## NotifyRoomPlayerUpdate
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | update_list | [PlayerBaseView](#PlayerBaseView) |
 | 2 | remove_list | uint32 |
 | 3 | owner_id | uint32 |
@@ -53,21 +53,21 @@ No fields
 ## NotifyFriendStateChange
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | target_id | uint32 |
 | 2 | active_state | [AccountActiveState](#AccountActiveState) |
 
 ## NotifyFriendViewChange
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | target_id | uint32 |
 | 2 | base | [PlayerBaseView](#PlayerBaseView) |
 
 ## NotifyFriendChange
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | account_id | uint32 |
 | 2 | type | uint32 |
 | 3 | friend | [Friend](#Friend) |
@@ -75,7 +75,7 @@ No fields
 ## NotifyNewFriendApply
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | account_id | uint32 |
 | 2 | apply_time | uint32 |
 | 3 | removed_id | uint32 |
@@ -83,7 +83,7 @@ No fields
 ## NotifyClientMessage
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | sender | [PlayerBaseView](#PlayerBaseView) |
 | 2 | type | uint32 |
 | 3 | content | string |
@@ -91,7 +91,7 @@ No fields
 ## NotifyAccountUpdate
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | update | [AccountUpdate](#AccountUpdate) |
 
 ## NotifyAnotherLogin
@@ -105,32 +105,32 @@ No fields
 ## NotifyAnnouncementUpdate
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | announcements | [Announcement](#Announcement) |
 | 2 | sort | uint32 |
 
 ## NotifyNewMail
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | mail | [Mail](#Mail) |
 
 ## NotifyDeleteMail
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | mail_id_list | uint32 |
 
 ## NotifyReviveCoinUpdate
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | has_gained | bool |
 
 ## NotifyDailyTaskUpdate
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | progresses | [TaskProgress](#TaskProgress) |
 | 2 | max_daily_task_count | uint32 |
 | 3 | refresh_count | uint32 |
@@ -138,19 +138,19 @@ No fields
 ## NotifyActivityTaskUpdate
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | progresses | [TaskProgress](#TaskProgress) |
 
 ## NotifyActivityPeriodTaskUpdate
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | progresses | [TaskProgress](#TaskProgress) |
 
 ## NotifyAccountRandomTaskUpdate
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | progresses | [TaskProgress](#TaskProgress) |
 
 ## NotifyNewComment
@@ -160,7 +160,7 @@ No fields
 ## NotifyRollingNotice
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | notice | [RollingNotice](#RollingNotice) |
 
 ## NotifyGiftSendRefresh
@@ -170,13 +170,13 @@ No fields
 ## NotifyShopUpdate
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | shop_info | [ShopInfo](#ShopInfo) |
 
 ## NotifyVipLevelChange
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | gift_limit | uint32 |
 | 2 | friend_max_count | uint32 |
 | 3 | zhp_free_refresh_limit | uint32 |
@@ -187,13 +187,13 @@ No fields
 ## NotifyServerSetting
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | settings | [ServerSettings](#ServerSettings) |
 
 ## NotifyPayResult
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | pay_result | uint32 |
 | 2 | order_id | string |
 | 3 | goods_id | uint32 |
@@ -203,7 +203,7 @@ No fields
 ## NotifyCustomContestAccountMsg
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | unique_id | uint32 |
 | 2 | account_id | uint32 |
 | 3 | sender | string |
@@ -213,7 +213,7 @@ No fields
 ## NotifyCustomContestSystemMsg
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | unique_id | uint32 |
 | 2 | type | uint32 |
 | 3 | uuid | string |
@@ -223,21 +223,21 @@ No fields
 ## NotifyCustomContestState
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | unique_id | uint32 |
 | 2 | state | uint32 |
 
 ## NotifyActivityChange
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | new_activities | [Activity](#Activity) |
 | 2 | end_activities | uint32 |
 
 ## NotifyAFKResult
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | type | uint32 |
 | 2 | ban_end_time | uint32 |
 | 3 | game_uuid | string |
@@ -245,7 +245,7 @@ No fields
 ## Error
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | code | uint32 |
 | 2 | u32_params | uint32 |
 | 3 | str_params | string |
@@ -254,14 +254,14 @@ No fields
 ## Wrapper
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | name | string |
 | 2 | data | [bytes](#bytes) |
 
 ## NetworkEndpoint
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | family | string |
 | 2 | address | string |
 | 3 | port | uint32 |
@@ -273,26 +273,26 @@ No fields
 ## ResCommon
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 
 ## ResAccountUpdate
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | update | [AccountUpdate](#AccountUpdate) |
 
 ## AntiAddiction
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | online_duration | uint32 |
 
 ## AccountMahjongStatistic
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | final_position_counts | uint32 |
 | 2 | recent_round | [RoundSummary](#RoundSummary) |
 | 3 | recent_hu | [HuSummary](#HuSummary) |
@@ -304,7 +304,7 @@ No fields
 ## AccountStatisticData
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | mahjong_category | uint32 |
 | 2 | game_category | uint32 |
 | 3 | statistic | [AccountMahjongStatistic](#AccountMahjongStatistic) |
@@ -312,21 +312,21 @@ No fields
 ## AccountLevel
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | id | uint32 |
 | 2 | score | uint32 |
 
 ## ViewSlot
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | slot | uint32 |
 | 2 | item_id | uint32 |
 
 ## Account
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | account_id | uint32 |
 | 2 | nickname | string |
 | 3 | login_time | uint32 |
@@ -355,13 +355,13 @@ No fields
 ## AccountOwnerData
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | unlock_characters | uint32 |
 
 ## AccountUpdate
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | numerical | [NumericalUpdate](#NumericalUpdate) |
 | 2 | character | [CharacterUpdate](#CharacterUpdate) |
 | 3 | bag | [BagUpdate](#BagUpdate) |
@@ -378,7 +378,7 @@ No fields
 ## GameMetaData
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | room_id | uint32 |
 | 2 | mode_id | uint32 |
 | 3 | contest_uid | uint32 |
@@ -386,7 +386,7 @@ No fields
 ## AccountPlayingGame
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | game_uuid | string |
 | 2 | category | uint32 |
 | 3 | meta | [GameMetaData](#GameMetaData) |
@@ -394,7 +394,7 @@ No fields
 ## AccountCacheView
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | cache_version | uint32 |
 | 2 | account_id | uint32 |
 | 3 | nickname | string |
@@ -416,7 +416,7 @@ No fields
 ## PlayerBaseView
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | account_id | uint32 |
 | 2 | avatar_id | uint32 |
 | 3 | title | uint32 |
@@ -429,7 +429,7 @@ No fields
 ## PlayerGameView
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | account_id | uint32 |
 | 2 | avatar_id | uint32 |
 | 3 | title | uint32 |
@@ -444,7 +444,7 @@ No fields
 ## GameMode
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | mode | uint32 |
 | 4 | ai | bool |
 | 5 | extendinfo | string |
@@ -454,14 +454,14 @@ No fields
 ## GameTestingEnvironmentSet
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | paixing | uint32 |
 | 2 | left_count | uint32 |
 
 ## GameDetailRule
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | time_fixed | uint32 |
 | 2 | time_add | uint32 |
 | 3 | dora_count | uint32 |
@@ -513,7 +513,7 @@ No fields
 ## Room
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | room_id | uint32 |
 | 2 | owner_id | uint32 |
 | 3 | mode | [GameMode](#GameMode) |
@@ -528,13 +528,13 @@ No fields
 ## GameEndResult
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | players | [PlayerItem](#PlayerItem) |
 
 ## GameConnectInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 2 | connect_token | string |
 | 3 | game_uuid | string |
 | 4 | location | string |
@@ -542,14 +542,14 @@ No fields
 ## ItemGainRecord
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | item_id | uint32 |
 | 2 | count | uint32 |
 
 ## ItemGainRecords
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | record_time | uint32 |
 | 2 | limit_source_id | uint32 |
 | 3 | records | [ItemGainRecord](#ItemGainRecord) |
@@ -557,42 +557,42 @@ No fields
 ## Item
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | item_id | uint32 |
 | 2 | stack | uint32 |
 
 ## Bag
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | items | [Item](#Item) |
 | 2 | daily_gain_record | [ItemGainRecords](#ItemGainRecords) |
 
 ## BagUpdate
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | update_items | [Item](#Item) |
 | 2 | update_daily_gain_record | [ItemGainRecords](#ItemGainRecords) |
 
 ## RewardSlot
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | id | uint32 |
 | 2 | count | uint32 |
 
 ## OpenResult
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | reward | [RewardSlot](#RewardSlot) |
 | 2 | replace | [RewardSlot](#RewardSlot) |
 
 ## RewardPlusResult
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | id | uint32 |
 | 2 | count | uint32 |
 | 3 | exchange | [Exchange](#Exchange) |
@@ -600,7 +600,7 @@ No fields
 ## ExecuteReward
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | reward | [RewardSlot](#RewardSlot) |
 | 2 | replace | [RewardSlot](#RewardSlot) |
 | 3 | replace_count | uint32 |
@@ -608,7 +608,7 @@ No fields
 ## Mail
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | mail_id | uint32 |
 | 2 | state | uint32 |
 | 3 | take_attachment | bool |
@@ -622,7 +622,7 @@ No fields
 ## AchievementProgress
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | id | uint32 |
 | 2 | counter | uint32 |
 | 3 | achieved | bool |
@@ -631,7 +631,7 @@ No fields
 ## AccountStatisticByGameMode
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | mode | uint32 |
 | 2 | game_count_sum | uint32 |
 | 3 | game_final_position | uint32 |
@@ -650,14 +650,14 @@ No fields
 ## AccountStatisticByFan
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | fan_id | uint32 |
 | 2 | sum | uint32 |
 
 ## AccountFanAchieved
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | mahjong_category | uint32 |
 | 2 | fan | [AccountStatisticByFan](#AccountStatisticByFan) |
 | 3 | liujumanguan | uint32 |
@@ -665,7 +665,7 @@ No fields
 ## AccountDetailStatistic
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | game_mode | [AccountStatisticByGameMode](#AccountStatisticByGameMode) |
 | 2 | fan | [AccountStatisticByFan](#AccountStatisticByFan) |
 | 3 | liujumanguan | uint32 |
@@ -674,14 +674,14 @@ No fields
 ## AccountDetailStatisticByCategory
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | category | uint32 |
 | 2 | detail_statistic | [AccountDetailStatistic](#AccountDetailStatistic) |
 
 ## AccountDetailStatisticV2
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | friend_room_statistic | [AccountDetailStatistic](#AccountDetailStatistic) |
 | 2 | rank_statistic | [RankStatistic](#RankStatistic) |
 | 3 | customized_contest_statistic | [CustomizedContestStatistic](#CustomizedContestStatistic) |
@@ -690,14 +690,14 @@ No fields
 ## AccountShiLian
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | step | uint32 |
 | 2 | state | uint32 |
 
 ## ClientDeviceInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | device_type | string |
 | 2 | os | string |
 | 3 | os_version | string |
@@ -708,7 +708,7 @@ No fields
 ## Announcement
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | id | uint32 |
 | 2 | title | string |
 | 3 | content | string |
@@ -716,7 +716,7 @@ No fields
 ## TaskProgress
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | id | uint32 |
 | 2 | counter | uint32 |
 | 3 | achieved | bool |
@@ -725,7 +725,7 @@ No fields
 ## GameConfig
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | category | uint32 |
 | 2 | mode | [GameMode](#GameMode) |
 | 3 | meta | [GameMetaData](#GameMetaData) |
@@ -733,7 +733,7 @@ No fields
 ## AccountActiveState
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | account_id | uint32 |
 | 2 | login_time | uint32 |
 | 3 | logout_time | uint32 |
@@ -743,14 +743,14 @@ No fields
 ## Friend
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | base | [PlayerBaseView](#PlayerBaseView) |
 | 2 | state | [AccountActiveState](#AccountActiveState) |
 
 ## GameLiveUnit
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | timestamp | uint32 |
 | 2 | action_category | uint32 |
 | 3 | action_data | [bytes](#bytes) |
@@ -758,20 +758,20 @@ No fields
 ## GameLiveSegment
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | actions | [GameLiveUnit](#GameLiveUnit) |
 
 ## GameLiveSegmentUri
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | segment_id | uint32 |
 | 2 | segment_uri | string |
 
 ## GameLiveHead
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | uuid | string |
 | 2 | start_time | uint32 |
 | 3 | game_config | [GameConfig](#GameConfig) |
@@ -781,13 +781,13 @@ No fields
 ## GameNewRoundState
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | seat_states | uint32 |
 
 ## GameEndAction
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | state | uint32 |
 
 ## GameNoopAction
@@ -797,7 +797,7 @@ No fields
 ## CommentItem
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | comment_id | uint32 |
 | 2 | timestamp | uint32 |
 | 3 | commenter | [PlayerBaseView](#PlayerBaseView) |
@@ -807,7 +807,7 @@ No fields
 ## RollingNotice
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | id | uint32 |
 | 2 | content | string |
 | 3 | start_time | uint32 |
@@ -817,7 +817,7 @@ No fields
 ## BillingGoods
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | id | string |
 | 2 | name | string |
 | 3 | desc | string |
@@ -828,7 +828,7 @@ No fields
 ## BillShortcut
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | id | uint32 |
 | 2 | count | uint32 |
 | 3 | dealPrice | uint32 |
@@ -836,7 +836,7 @@ No fields
 ## BillingProduct
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods | [BillingGoods](#BillingGoods) |
 | 2 | currency_code | string |
 | 3 | currency_price | uint32 |
@@ -845,7 +845,7 @@ No fields
 ## Character
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | charid | uint32 |
 | 2 | level | uint32 |
 | 3 | exp | uint32 |
@@ -857,14 +857,14 @@ No fields
 ## BuyRecord
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | id | uint32 |
 | 2 | count | uint32 |
 
 ## ZHPShop
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods | uint32 |
 | 2 | buy_records | [BuyRecord](#BuyRecord) |
 | 3 | free_refresh | [RefreshCount](#RefreshCount) |
@@ -873,7 +873,7 @@ No fields
 ## MonthTicketInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | id | uint32 |
 | 2 | end_time | uint32 |
 | 3 | last_pay_time | uint32 |
@@ -881,7 +881,7 @@ No fields
 ## ShopInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | zhp | [ZHPShop](#ZHPShop) |
 | 2 | buy_records | [BuyRecord](#BuyRecord) |
 | 3 | last_refresh_time | uint32 |
@@ -889,7 +889,7 @@ No fields
 ## ChangeNicknameRecord
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | from | string |
 | 2 | to | string |
 | 3 | time | uint32 |
@@ -897,13 +897,13 @@ No fields
 ## ServerSettings
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 3 | payment_setting | [PaymentSetting](#PaymentSetting) |
 
 ## PaymentSetting
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | open_payment | uint32 |
 | 2 | payment_info_show_type | uint32 |
 | 3 | payment_info | string |
@@ -913,14 +913,14 @@ No fields
 ## AccountSetting
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | key | uint32 |
 | 2 | value | uint32 |
 
 ## ChestData
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | chest_id | uint32 |
 | 2 | total_open_count | uint32 |
 | 3 | consume_count | uint32 |
@@ -929,7 +929,7 @@ No fields
 ## ChestDataV2
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | chest_id | uint32 |
 | 2 | total_open_count | uint32 |
 | 3 | face_black_count | uint32 |
@@ -937,7 +937,7 @@ No fields
 ## FaithData
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | faith_id | uint32 |
 | 2 | total_open_count | uint32 |
 | 3 | consume_count | uint32 |
@@ -946,7 +946,7 @@ No fields
 ## CustomizedContestBase
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | unique_id | uint32 |
 | 2 | contest_id | uint32 |
 | 3 | contest_name | string |
@@ -961,14 +961,14 @@ No fields
 ## CustomizedContestExtend
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | unique_id | uint32 |
 | 2 | public_notice | string |
 
 ## CustomizedContestAbstract
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | unique_id | uint32 |
 | 2 | contest_id | uint32 |
 | 3 | contest_name | string |
@@ -983,7 +983,7 @@ No fields
 ## CustomizedContestDetail
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | unique_id | uint32 |
 | 2 | contest_id | uint32 |
 | 3 | contest_name | string |
@@ -1001,7 +1001,7 @@ No fields
 ## CustomizedContestPlayerReport
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | rank_rule | uint32 |
 | 2 | rank | uint32 |
 | 3 | point | int32 |
@@ -1011,7 +1011,7 @@ No fields
 ## RecordGame
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | uuid | string |
 | 2 | start_time | uint32 |
 | 3 | end_time | uint32 |
@@ -1022,19 +1022,19 @@ No fields
 ## CustomizedContestGameStart
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | players | [Item](#Item) |
 
 ## CustomizedContestGameEnd
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | players | [Item](#Item) |
 
 ## Activity
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | activity_id | uint32 |
 | 2 | start_time | uint32 |
 | 3 | end_time | uint32 |
@@ -1043,14 +1043,14 @@ No fields
 ## ExchangeRecord
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | exchange_id | uint32 |
 | 2 | count | uint32 |
 
 ## ActivityAccumulatedPointData
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | activity_id | uint32 |
 | 2 | point | int32 |
 | 3 | gained_reward_list | uint32 |
@@ -1058,7 +1058,7 @@ No fields
 ## ActivityRankPointData
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | leaderboard_id | uint32 |
 | 2 | point | int32 |
 | 3 | gained_reward | bool |
@@ -1067,7 +1067,7 @@ No fields
 ## GameRoundHuData
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | hupai | [HuPai](#HuPai) |
 | 2 | fans | [Fan](#Fan) |
 | 3 | score | uint32 |
@@ -1085,7 +1085,7 @@ No fields
 ## GameRoundPlayerResult
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | type | uint32 |
 | 2 | hands | string |
 | 3 | ming | string |
@@ -1098,7 +1098,7 @@ No fields
 ## GameRoundPlayer
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | score | int32 |
 | 2 | rank | uint32 |
 | 3 | result | [GameRoundPlayerResult](#GameRoundPlayerResult) |
@@ -1106,7 +1106,7 @@ No fields
 ## GameRoundSnapshot
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | ju | uint32 |
 | 2 | ben | uint32 |
 | 3 | players | [GameRoundPlayer](#GameRoundPlayer) |
@@ -1114,7 +1114,7 @@ No fields
 ## GameFinalSnapshot
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | uuid | string |
 | 2 | state | uint32 |
 | 3 | category | uint32 |
@@ -1133,7 +1133,7 @@ No fields
 ## RecordCollectedData
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | uuid | string |
 | 2 | remarks | string |
 | 3 | start_time | uint32 |
@@ -1142,7 +1142,7 @@ No fields
 ## ContestDetailRule
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 5 | init_point | uint32 |
 | 6 | fandian | uint32 |
 | 7 | can_jifei | bool |
@@ -1184,14 +1184,14 @@ No fields
 ## ContestDetailRuleV2
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | game_rule | [ContestDetailRule](#ContestDetailRule) |
 | 2 | extra_rule | [ExtraRule](#ExtraRule) |
 
 ## GameRuleSetting
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | round_type | uint32 |
 | 2 | shiduan | bool |
 | 3 | dora_count | uint32 |
@@ -1403,14 +1403,14 @@ No fields
 ## ResConnectionInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | client_endpoint | [NetworkEndpoint](#NetworkEndpoint) |
 
 ## ReqSignupAccount
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | account | string |
 | 2 | password | string |
 | 3 | code | string |
@@ -1419,13 +1419,13 @@ No fields
 ## ResSignupAccount
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 
 ## ReqLogin
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | account | string |
 | 2 | password | string |
 | 3 | reconnect | bool |
@@ -1439,7 +1439,7 @@ No fields
 ## ResLogin
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | account_id | uint32 |
 | 3 | account | [Account](#Account) |
@@ -1452,7 +1452,7 @@ No fields
 ## ReqEmailLogin
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | email | string |
 | 2 | password | string |
 | 3 | reconnect | bool |
@@ -1465,42 +1465,42 @@ No fields
 ## ReqBindAccount
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | account | string |
 | 2 | password | string |
 
 ## ReqCreatePhoneVerifyCode
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | phone | string |
 | 2 | usage | uint32 |
 
 ## ReqCreateEmailVerifyCode
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | email | string |
 | 2 | usage | uint32 |
 
 ## ReqVerifyCodeForSecure
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | code | string |
 | 2 | operation | uint32 |
 
 ## ResVerfiyCodeForSecure
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | secure_token | string |
 
 ## ReqBindPhoneNumber
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | code | string |
 | 2 | phone | string |
 | 3 | password | string |
@@ -1509,7 +1509,7 @@ No fields
 ## ReqUnbindPhoneNumber
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | code | string |
 | 2 | phone | string |
 | 3 | password | string |
@@ -1517,20 +1517,20 @@ No fields
 ## ResFetchPhoneLoginBind
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | phone_login | uint32 |
 
 ## ReqCreatePhoneLoginBind
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | password | string |
 
 ## ReqBindEmail
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | email | string |
 | 2 | code | string |
 | 3 | password | string |
@@ -1538,7 +1538,7 @@ No fields
 ## ReqModifyPassword
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | new_password | string |
 | 2 | old_password | string |
 | 3 | secure_token | string |
@@ -1546,7 +1546,7 @@ No fields
 ## ReqOauth2Auth
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | type | uint32 |
 | 2 | code | string |
 | 3 | uid | string |
@@ -1554,28 +1554,28 @@ No fields
 ## ResOauth2Auth
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | access_token | string |
 
 ## ReqOauth2Check
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | type | uint32 |
 | 2 | access_token | string |
 
 ## ResOauth2Check
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | has_account | bool |
 
 ## ReqOauth2Signup
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | type | uint32 |
 | 2 | access_token | string |
 | 3 | email | string |
@@ -1584,13 +1584,13 @@ No fields
 ## ResOauth2Signup
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 
 ## ReqOauth2Login
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | type | uint32 |
 | 2 | access_token | string |
 | 3 | reconnect | bool |
@@ -1602,13 +1602,13 @@ No fields
 ## ReqDMMPreLogin
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | finish_url | string |
 
 ## ResDMMPreLogin
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | parameter | string |
 
 ## ReqLogout
@@ -1618,43 +1618,43 @@ No fields
 ## ResLogout
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 
 ## ReqHeatBeat
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | no_operation_counter | uint32 |
 
 ## ReqLoginBeat
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | contract | string |
 
 ## ReqJoinMatchQueue
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | match_mode | uint32 |
 
 ## ReqCancelMatchQueue
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | match_mode | uint32 |
 
 ## ReqAccountInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | account_id | uint32 |
 
 ## ResAccountInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | account | [Account](#Account) |
 | 3 | room | [Room](#Room) |
@@ -1662,34 +1662,34 @@ No fields
 ## ReqCreateNickname
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | nickname | string |
 | 2 | advertise_str | string |
 
 ## ReqModifyNickname
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | nickname | string |
 | 2 | use_item_id | uint32 |
 
 ## ReqModifyBirthday
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | birthday | int32 |
 
 ## ResSelfRoom
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | room | [Room](#Room) |
 
 ## ReqCreateRoom
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | player_count | uint32 |
 | 2 | mode | [GameMode](#GameMode) |
 | 3 | public_live | bool |
@@ -1697,33 +1697,33 @@ No fields
 ## ResCreateRoom
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | room | [Room](#Room) |
 
 ## ReqJoinRoom
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | room_id | uint32 |
 
 ## ResJoinRoom
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | room | [Room](#Room) |
 
 ## ReqRoomReady
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | ready | bool |
 
 ## ReqRoomDressing
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | dressing | bool |
 
 ## ReqRoomStart
@@ -1733,31 +1733,31 @@ No fields
 ## ReqRoomKick
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | account_id | uint32 |
 
 ## ReqModifyRoom
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | robot_count | uint32 |
 
 ## ReqChangeAvatar
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | avatar_id | uint32 |
 
 ## ReqAccountStatisticInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | account_id | uint32 |
 
 ## ResAccountStatisticInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | statistic_data | [AccountStatisticData](#AccountStatisticData) |
 | 3 | detail_data | [AccountDetailStatisticV2](#AccountDetailStatisticV2) |
@@ -1765,33 +1765,33 @@ No fields
 ## ResAccountCharacterInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | unlock_list | uint32 |
 
 ## ReqShopPurchase
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | type | string |
 | 2 | id | uint32 |
 
 ## ResShopPurchase
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | update | [AccountUpdate](#AccountUpdate) |
 
 ## ReqGameRecord
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | game_uuid | string |
 
 ## ResGameRecord
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 3 | head | [RecordGame](#RecordGame) |
 | 4 | data | [bytes](#bytes) |
@@ -1800,7 +1800,7 @@ No fields
 ## ReqGameRecordList
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | start | uint32 |
 | 2 | count | uint32 |
 | 3 | type | uint32 |
@@ -1808,7 +1808,7 @@ No fields
 ## ResGameRecordList
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | total_count | uint32 |
 | 3 | record_list | [RecordGame](#RecordGame) |
@@ -1816,7 +1816,7 @@ No fields
 ## ResCollectedGameRecordList
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | record_list | [RecordCollectedData](#RecordCollectedData) |
 | 3 | record_collect_limit | uint32 |
@@ -1824,20 +1824,20 @@ No fields
 ## ReqGameRecordsDetail
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | uuid_list | string |
 
 ## ResGameRecordsDetail
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | record_list | [RecordGame](#RecordGame) |
 
 ## ReqAddCollectedGameRecord
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | uuid | string |
 | 2 | remarks | string |
 | 3 | start_time | uint32 |
@@ -1846,44 +1846,44 @@ No fields
 ## ResAddCollectedGameRecord
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 
 ## ReqRemoveCollectedGameRecord
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | uuid | string |
 
 ## ResRemoveCollectedGameRecord
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 
 ## ReqChangeCollectedGameRecordRemarks
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | uuid | string |
 | 2 | remarks | string |
 
 ## ResChangeCollectedGameRecordRemarks
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 
 ## ReqLevelLeaderboard
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | type | uint32 |
 
 ## ResLevelLeaderboard
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | items | [Item](#Item) |
 | 3 | self_rank | uint32 |
@@ -1891,20 +1891,20 @@ No fields
 ## ReqMultiAccountId
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | account_id_list | uint32 |
 
 ## ResMultiAccountBrief
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | players | [PlayerBaseView](#PlayerBaseView) |
 
 ## ResFriendList
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | friends | [Friend](#Friend) |
 | 3 | friend_max_count | uint32 |
@@ -1912,40 +1912,40 @@ No fields
 ## ResFriendApplyList
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | applies | [FriendApply](#FriendApply) |
 
 ## ReqApplyFriend
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | target_id | uint32 |
 
 ## ReqHandleFriendApply
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | target_id | uint32 |
 | 2 | method | uint32 |
 
 ## ReqRemoveFriend
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | target_id | uint32 |
 
 ## ReqSearchAccountByPattern
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | search_next | bool |
 | 2 | pattern | string |
 
 ## ResSearchAccountByPattern
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | is_finished | bool |
 | 3 | match_accounts | uint32 |
@@ -1954,46 +1954,46 @@ No fields
 ## ReqAccountList
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | account_id_list | uint32 |
 
 ## ResAccountStates
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | states | [AccountActiveState](#AccountActiveState) |
 
 ## ReqSearchAccountById
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | account_id | uint32 |
 
 ## ResSearchAccountById
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | player | [PlayerBaseView](#PlayerBaseView) |
 
 ## ResBagInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | bag | [Bag](#Bag) |
 
 ## ReqUseBagItem
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | item_id | uint32 |
 
 ## ReqOpenManualItem
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | item_id | uint32 |
 | 2 | count | uint32 |
 | 3 | select_id | uint32 |
@@ -2001,26 +2001,26 @@ No fields
 ## ReqOpenRandomRewardItem
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | item_id | uint32 |
 
 ## ResOpenRandomRewardItem
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | results | [OpenResult](#OpenResult) |
 
 ## ReqComposeShard
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | item_id | uint32 |
 
 ## ResAnnouncement
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | announcements | [Announcement](#Announcement) |
 | 3 | sort | uint32 |
@@ -2029,112 +2029,112 @@ No fields
 ## ResMailInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | mails | [Mail](#Mail) |
 
 ## ReqReadMail
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | mail_id | uint32 |
 
 ## ReqDeleteMail
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | mail_id | uint32 |
 
 ## ReqTakeAttachment
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | mail_id | uint32 |
 
 ## ResAchievement
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | progresses | [AchievementProgress](#AchievementProgress) |
 
 ## ResTitleList
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | title_list | uint32 |
 
 ## ReqUseTitle
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | title | uint32 |
 
 ## ReqBuyShiLian
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | type | uint32 |
 
 ## ReqUpdateClientValue
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | key | uint32 |
 | 2 | value | uint32 |
 
 ## ResClientValue
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | datas | [Value](#Value) |
 | 2 | recharged_count | uint32 |
 
 ## ReqClientMessage
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | timestamp | uint32 |
 | 2 | message | string |
 
 ## ReqCurrentMatchInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | mode_list | uint32 |
 
 ## ResCurrentMatchInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | matches | [CurrentMatchInfo](#CurrentMatchInfo) |
 
 ## ReqUserComplain
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | target_id | uint32 |
 | 2 | type | uint32 |
 
 ## ReqReadAnnouncement
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | announcement_id | uint32 |
 
 ## ResReviveCoinInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | has_gained | bool |
 
 ## ResDailyTask
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | progresses | [TaskProgress](#TaskProgress) |
 | 3 | has_refresh_count | bool |
@@ -2144,13 +2144,13 @@ No fields
 ## ReqRefreshDailyTask
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | task_id | uint32 |
 
 ## ResRefreshDailyTask
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | progress | [TaskProgress](#TaskProgress) |
 | 3 | refresh_count | uint32 |
@@ -2158,20 +2158,20 @@ No fields
 ## ReqUseGiftCode
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | code | string |
 
 ## ResUseGiftCode
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 6 | rewards | [RewardSlot](#RewardSlot) |
 
 ## ReqSendClientMessage
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | target_id | uint32 |
 | 2 | type | uint32 |
 | 3 | content | string |
@@ -2179,13 +2179,13 @@ No fields
 ## ReqGameLiveInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | game_uuid | string |
 
 ## ResGameLiveInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | left_start_seconds | uint32 |
 | 3 | live_head | [GameLiveHead](#GameLiveHead) |
@@ -2195,14 +2195,14 @@ No fields
 ## ReqGameLiveLeftSegment
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | game_uuid | string |
 | 2 | last_segment_id | uint32 |
 
 ## ResGameLiveLeftSegment
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | live_state | uint32 |
 | 4 | segments | [GameLiveSegmentUri](#GameLiveSegmentUri) |
@@ -2212,39 +2212,39 @@ No fields
 ## ReqGameLiveList
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | filter_id | uint32 |
 
 ## ResGameLiveList
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | live_list | [GameLiveHead](#GameLiveHead) |
 
 ## ResCommentSetting
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | comment_allow | uint32 |
 
 ## ReqUpdateCommentSetting
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | comment_allow | uint32 |
 
 ## ReqFetchCommentList
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | target_id | uint32 |
 
 ## ResFetchCommentList
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | comment_allow | uint32 |
 | 3 | comment_id_list | uint32 |
@@ -2253,66 +2253,66 @@ No fields
 ## ReqFetchCommentContent
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | target_id | uint32 |
 | 2 | comment_id_list | uint32 |
 
 ## ResFetchCommentContent
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | comments | [CommentItem](#CommentItem) |
 
 ## ReqLeaveComment
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | target_id | uint32 |
 | 2 | content | string |
 
 ## ReqDeleteComment
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | target_id | uint32 |
 | 2 | delete_list | uint32 |
 
 ## ReqUpdateReadComment
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | read_id | uint32 |
 
 ## ReqRollingNotice
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | notice | [RollingNotice](#RollingNotice) |
 
 ## ResServerTime
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | server_time | uint32 |
 
 ## ReqPlatformBillingProducts
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | shelves_id | uint32 |
 
 ## ResPlatformBillingProducts
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | products | [BillingProduct](#BillingProduct) |
 
 ## ReqCreateBillingOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | payment_platform | uint32 |
 | 3 | client_type | uint32 |
@@ -2321,21 +2321,21 @@ No fields
 ## ResCreateBillingOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | order_id | string |
 
 ## ReqSolveGooglePlayOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 2 | inapp_purchase_data | string |
 | 3 | inapp_data_signature | string |
 
 ## ReqSolveGooglePlayOrderV3
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | order_id | string |
 | 2 | transaction_id | string |
 | 3 | token | string |
@@ -2344,13 +2344,13 @@ No fields
 ## ReqCancelGooglePlayOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | order_id | string |
 
 ## ReqCreateWechatNativeOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | client_type | uint32 |
 | 3 | account_id | uint32 |
@@ -2359,7 +2359,7 @@ No fields
 ## ResCreateWechatNativeOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | qrcode_buffer | string |
 | 3 | order_id | string |
@@ -2367,7 +2367,7 @@ No fields
 ## ReqCreateWechatAppOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | client_type | uint32 |
 | 3 | account_id | uint32 |
@@ -2376,14 +2376,14 @@ No fields
 ## ResCreateWechatAppOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | call_wechat_app_param | [CallWechatAppParam](#CallWechatAppParam) |
 
 ## ReqCreateAlipayOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | client_type | uint32 |
 | 3 | account_id | uint32 |
@@ -2393,14 +2393,14 @@ No fields
 ## ResCreateAlipayOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | alipay_url | string |
 
 ## ReqCreateAlipayScanOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | client_type | uint32 |
 | 3 | account_id | uint32 |
@@ -2408,7 +2408,7 @@ No fields
 ## ResCreateAlipayScanOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | qrcode_buffer | string |
 | 3 | order_id | string |
@@ -2417,7 +2417,7 @@ No fields
 ## ReqCreateAlipayAppOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | client_type | uint32 |
 | 3 | account_id | uint32 |
@@ -2425,14 +2425,14 @@ No fields
 ## ResCreateAlipayAppOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | alipay_url | string |
 
 ## ReqCreateJPCreditCardOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | client_type | uint32 |
 | 3 | account_id | uint32 |
@@ -2442,14 +2442,14 @@ No fields
 ## ResCreateJPCreditCardOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | order_id | string |
 
 ## ReqCreateJPPaypalOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | client_type | uint32 |
 | 3 | account_id | uint32 |
@@ -2459,14 +2459,14 @@ No fields
 ## ResCreateJPPaypalOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | order_id | string |
 
 ## ReqCreateJPAuOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | client_type | uint32 |
 | 3 | account_id | uint32 |
@@ -2476,14 +2476,14 @@ No fields
 ## ResCreateJPAuOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | order_id | string |
 
 ## ReqCreateJPDocomoOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | client_type | uint32 |
 | 3 | account_id | uint32 |
@@ -2493,14 +2493,14 @@ No fields
 ## ResCreateJPDocomoOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | order_id | string |
 
 ## ReqCreateJPWebMoneyOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | client_type | uint32 |
 | 3 | account_id | uint32 |
@@ -2510,14 +2510,14 @@ No fields
 ## ResCreateJPWebMoneyOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | order_id | string |
 
 ## ReqCreateJPSoftbankOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | client_type | uint32 |
 | 3 | account_id | uint32 |
@@ -2527,14 +2527,14 @@ No fields
 ## ResCreateJPSoftbankOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | order_id | string |
 
 ## ReqCreateYostarOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | client_type | uint32 |
 | 3 | account_id | uint32 |
@@ -2543,14 +2543,14 @@ No fields
 ## ResCreateYostarOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | order_id | string |
 
 ## ReqCreateENPaypalOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | client_type | uint32 |
 | 3 | account_id | uint32 |
@@ -2560,14 +2560,14 @@ No fields
 ## ResCreateENPaypalOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | order_id | string |
 
 ## ReqCreateENJCBOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | client_type | uint32 |
 | 3 | account_id | uint32 |
@@ -2577,14 +2577,14 @@ No fields
 ## ResCreateENJCBOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | order_id | string |
 
 ## ReqCreateENMasterCardOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | client_type | uint32 |
 | 3 | account_id | uint32 |
@@ -2594,14 +2594,14 @@ No fields
 ## ResCreateENMasterCardOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | order_id | string |
 
 ## ReqCreateENVisaOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | client_type | uint32 |
 | 3 | account_id | uint32 |
@@ -2611,14 +2611,14 @@ No fields
 ## ResCreateENVisaOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | order_id | string |
 
 ## ReqCreateENAlipayOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | client_type | uint32 |
 | 3 | account_id | uint32 |
@@ -2628,14 +2628,14 @@ No fields
 ## ResCreateENAlipayOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | order_id | string |
 
 ## ReqCreateDMMOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | account_id | uint32 |
 | 3 | client_type | uint32 |
@@ -2643,7 +2643,7 @@ No fields
 ## ResCreateDmmOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | order_id | string |
 | 3 | transaction_id | string |
@@ -2656,7 +2656,7 @@ No fields
 ## ReqCreateIAPOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | client_type | uint32 |
 | 3 | account_id | uint32 |
@@ -2665,14 +2665,14 @@ No fields
 ## ResCreateIAPOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | order_id | string |
 
 ## ReqVerificationIAPOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | order_id | string |
 | 2 | transaction_id | string |
 | 3 | receipt_data | string |
@@ -2681,13 +2681,13 @@ No fields
 ## ResVerificationIAPOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 
 ## ReqCreateMyCardOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | client_type | uint32 |
 | 3 | account_id | uint32 |
@@ -2695,7 +2695,7 @@ No fields
 ## ResCreateMyCardOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | auth_code | string |
 | 3 | order_id | string |
@@ -2703,14 +2703,14 @@ No fields
 ## ReqVerifyMyCardOrder
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | order_id | string |
 | 2 | account_id | uint32 |
 
 ## ReqOpenChest
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | chest_id | uint32 |
 | 2 | count | uint32 |
 | 3 | use_ticket | bool |
@@ -2718,7 +2718,7 @@ No fields
 ## ResOpenChest
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | results | [OpenResult](#OpenResult) |
 | 3 | total_open_count | uint32 |
@@ -2727,14 +2727,14 @@ No fields
 ## ReqBuyFromChestShop
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | count | uint32 |
 
 ## ResBuyFromChestShop
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | chest_id | uint32 |
 | 3 | consume_count | uint32 |
@@ -2743,20 +2743,20 @@ No fields
 ## ResDailySignInInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | sign_in_days | uint32 |
 
 ## ReqDoActivitySignIn
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 2 | activity_id | uint32 |
 
 ## ResDoActivitySignIn
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | rewards | [RewardData](#RewardData) |
 | 3 | sign_in_count | uint32 |
@@ -2764,7 +2764,7 @@ No fields
 ## ResCharacterInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | characters | [Character](#Character) |
 | 3 | skins | uint32 |
@@ -2777,20 +2777,20 @@ No fields
 ## ReqChangeMainCharacter
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | character_id | uint32 |
 
 ## ReqChangeCharacterSkin
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | character_id | uint32 |
 | 2 | skin | uint32 |
 
 ## ReqChangeCharacterView
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | character_id | uint32 |
 | 2 | slot | uint32 |
 | 3 | item_id | uint32 |
@@ -2798,14 +2798,14 @@ No fields
 ## ReqSendGiftToCharacter
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | character_id | uint32 |
 | 2 | gifts | [Gift](#Gift) |
 
 ## ResSendGiftToCharacter
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | level | uint32 |
 | 3 | exp | uint32 |
@@ -2813,27 +2813,27 @@ No fields
 ## ReqSellItem
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | sells | [Item](#Item) |
 
 ## ResCommonView
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | slots | [Slot](#Slot) |
 
 ## ReqChangeCommonView
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | slot | uint32 |
 | 2 | value | uint32 |
 
 ## ReqSaveCommonViews
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | views | [ViewSlot](#ViewSlot) |
 | 2 | save_index | uint32 |
 | 3 | is_use | uint32 |
@@ -2841,19 +2841,19 @@ No fields
 ## ReqCommonViews
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | index | uint32 |
 
 ## ResCommonViews
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | views | [ViewSlot](#ViewSlot) |
 
 ## ResAllcommonViews
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | views | [Views](#Views) |
 | 2 | use | uint32 |
 | 3 | error | [Error](#Error) |
@@ -2861,26 +2861,26 @@ No fields
 ## ReqUseCommonView
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 3 | index | uint32 |
 
 ## ReqUpgradeCharacter
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | character_id | uint32 |
 
 ## ResUpgradeCharacter
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | character | [Character](#Character) |
 
 ## ReqFinishedEnding
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | character_id | uint32 |
 | 2 | story_id | uint32 |
 | 3 | ending_id | uint32 |
@@ -2888,20 +2888,20 @@ No fields
 ## ReqGMCommand
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | command | string |
 
 ## ResShopInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | shop_info | [ShopInfo](#ShopInfo) |
 
 ## ReqBuyFromShop
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | count | uint32 |
 | 3 | bill_short_cut | [BillShortcut](#BillShortcut) |
@@ -2910,27 +2910,27 @@ No fields
 ## ResBuyFromShop
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | rewards | [RewardSlot](#RewardSlot) |
 
 ## ReqBuyFromZHP
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | count | uint32 |
 
 ## ReqPayMonthTicket
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | ticket_id | uint32 |
 
 ## ResPayMonthTicket
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | resource_id | uint32 |
 | 3 | resource_count | uint32 |
@@ -2938,59 +2938,59 @@ No fields
 ## ReqReshZHPShop
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | free_refresh | uint32 |
 | 2 | cost_refresh | uint32 |
 
 ## ResRefreshZHPShop
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | zhp | [ZHPShop](#ZHPShop) |
 
 ## ResMonthTicketInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | month_ticket_info | [MonthTicketInfo](#MonthTicketInfo) |
 
 ## ReqExchangeCurrency
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | id | uint32 |
 | 2 | count | uint32 |
 
 ## ResServerSettings
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | settings | [ServerSettings](#ServerSettings) |
 
 ## ResAccountSettings
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | settings | [AccountSetting](#AccountSetting) |
 
 ## ReqUpdateAccountSettings
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | setting | [AccountSetting](#AccountSetting) |
 
 ## ResModNicknameTime
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | last_mod_time | uint32 |
 
 ## ResMisc
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | recharged_list | uint32 |
 | 3 | faiths | [MiscFaithData](#MiscFaithData) |
@@ -2998,13 +2998,13 @@ No fields
 ## ReqModifySignature
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | signature | string |
 
 ## ResIDCardInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | is_authed | bool |
 | 3 | country | string |
@@ -3012,34 +3012,34 @@ No fields
 ## ReqUpdateIDCardInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | fullname | string |
 | 2 | card_no | string |
 
 ## ResVipReward
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | gained_vip_levels | uint32 |
 
 ## ReqGainVipReward
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | vip_level | uint32 |
 
 ## ReqFetchCustomizedContestList
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | start | uint32 |
 | 2 | count | uint32 |
 
 ## ResFetchCustomizedContestList
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | contests | [CustomizedContestBase](#CustomizedContestBase) |
 | 3 | follow_contests | [CustomizedContestBase](#CustomizedContestBase) |
@@ -3047,39 +3047,39 @@ No fields
 ## ReqFetchCustomizedContestExtendInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | uid_list | uint32 |
 
 ## ResFetchCustomizedContestExtendInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | extend_list | [CustomizedContestExtend](#CustomizedContestExtend) |
 
 ## ReqFetchCustomizedContestAuthInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | unique_id | uint32 |
 
 ## ResFetchCustomizedContestAuthInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | observer_level | uint32 |
 
 ## ReqEnterCustomizedContest
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | unique_id | uint32 |
 
 ## ResEnterCustomizedContest
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | detail_info | [CustomizedContestDetail](#CustomizedContestDetail) |
 | 3 | player_report | [CustomizedContestPlayerReport](#CustomizedContestPlayerReport) |
@@ -3088,78 +3088,78 @@ No fields
 ## ReqFetchCustomizedContestOnlineInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | unique_id | uint32 |
 
 ## ResFetchCustomizedContestOnlineInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | online_player | uint32 |
 
 ## ReqFetchCustomizedContestByContestId
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | contest_id | uint32 |
 
 ## ResFetchCustomizedContestByContestId
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | contest_info | [CustomizedContestAbstract](#CustomizedContestAbstract) |
 
 ## ReqStartCustomizedContest
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | unique_id | uint32 |
 
 ## ReqJoinCustomizedContestChatRoom
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | unique_id | uint32 |
 
 ## ResJoinCustomizedContestChatRoom
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | chat_history | [bytes](#bytes) |
 
 ## ReqSayChatMessage
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | content | string |
 
 ## ReqFetchCustomizedContestGameLiveList
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | unique_id | uint32 |
 
 ## ResFetchCustomizedContestGameLiveList
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | live_list | [GameLiveHead](#GameLiveHead) |
 
 ## ReqFetchCustomizedContestGameRecords
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | unique_id | uint32 |
 | 2 | last_index | uint32 |
 
 ## ResFetchCustomizedContestGameRecords
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | next_index | uint32 |
 | 3 | record_list | [RecordGame](#RecordGame) |
@@ -3167,20 +3167,20 @@ No fields
 ## ReqTargetCustomizedContest
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | unique_id | uint32 |
 
 ## ResActivityList
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | activities | [Activity](#Activity) |
 
 ## ResAccountActivityData
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | exchange_records | [ExchangeRecord](#ExchangeRecord) |
 | 3 | task_progress_list | [TaskProgress](#TaskProgress) |
@@ -3195,45 +3195,45 @@ No fields
 ## ReqExchangeActivityItem
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | exchange_id | uint32 |
 
 ## ResExchangeActivityItem
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | execute_reward | [ExecuteReward](#ExecuteReward) |
 
 ## ReqCompleteActivityTask
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | task_id | uint32 |
 
 ## ReqReceiveActivityFlipTask
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | task_id | uint32 |
 
 ## ResReceiveActivityFlipTask
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | count | uint32 |
 | 2 | error | [Error](#Error) |
 
 ## ReqFetchActivityFlipInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | activity_id | uint32 |
 
 ## ResFetchActivityFlipInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | rewards | uint32 |
 | 2 | count | uint32 |
 | 3 | error | [Error](#Error) |
@@ -3241,20 +3241,20 @@ No fields
 ## ReqGainAccumulatedPointActivityReward
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | activity_id | uint32 |
 | 2 | reward_id | uint32 |
 
 ## ReqFetchRankPointLeaderboard
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | leaderboard_id | uint32 |
 
 ## ResFetchRankPointLeaderboard
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | items | [Item](#Item) |
 | 3 | last_refresh_time | uint32 |
@@ -3262,20 +3262,20 @@ No fields
 ## ReqGainRankPointReward
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | leaderboard_id | uint32 |
 | 2 | activity_id | uint32 |
 
 ## ReqRichmanNextMove
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | activity_id | uint32 |
 
 ## ResRichmanNextMove
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | paths | [PathData](#PathData) |
 | 2 | dice | uint32 |
 | 3 | location | uint32 |
@@ -3291,33 +3291,33 @@ No fields
 ## ReqRichmanSpecialMove
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | activity_id | uint32 |
 | 2 | step | uint32 |
 
 ## ReqRichmanChestInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | activity_id | uint32 |
 
 ## ResRichmanChestInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | items | [ItemData](#ItemData) |
 | 2 | error | [Error](#Error) |
 
 ## ReqCreateGameObserveAuth
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | game_uuid | string |
 
 ## ResCreateGameObserveAuth
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | token | string |
 | 3 | location | string |
@@ -3325,13 +3325,13 @@ No fields
 ## ReqRefreshGameObserveAuth
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | token | string |
 
 ## ResRefreshGameObserveAuth
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | ttl | uint32 |
 
@@ -3342,7 +3342,7 @@ No fields
 ## NewRoundOpenedTiles
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | seat | uint32 |
 | 2 | tiles | string |
 | 3 | count | uint32 |
@@ -3350,7 +3350,7 @@ No fields
 ## MuyuInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | seat | uint32 |
 | 2 | count | uint32 |
 | 3 | count_max | uint32 |
@@ -3359,7 +3359,7 @@ No fields
 ## ActionNewRound
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | chang | uint32 |
 | 2 | ju | uint32 |
 | 3 | ben | uint32 |
@@ -3380,7 +3380,7 @@ No fields
 ## RecordNewRound
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | chang | uint32 |
 | 2 | ju | uint32 |
 | 3 | ben | uint32 |
@@ -3403,7 +3403,7 @@ No fields
 ## GameSnapshot
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | chang | uint32 |
 | 2 | ju | uint32 |
 | 3 | ben | uint32 |
@@ -3418,7 +3418,7 @@ No fields
 ## ActionPrototype
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | step | uint32 |
 | 2 | name | string |
 | 3 | data | [bytes](#bytes) |
@@ -3426,20 +3426,20 @@ No fields
 ## GameDetailRecords
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | records | [bytes](#bytes) |
 
 ## OptionalOperation
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | type | uint32 |
 | 2 | combination | string |
 
 ## OptionalOperationList
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | seat | uint32 |
 | 2 | operation_list | [OptionalOperation](#OptionalOperation) |
 | 4 | time_add | uint32 |
@@ -3448,7 +3448,7 @@ No fields
 ## LiQiSuccess
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | seat | uint32 |
 | 2 | score | int32 |
 | 3 | liqibang | uint32 |
@@ -3456,7 +3456,7 @@ No fields
 ## FanInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | name | string |
 | 2 | val | uint32 |
 | 3 | id | uint32 |
@@ -3464,7 +3464,7 @@ No fields
 ## HuleInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | hand | string |
 | 2 | ming | string |
 | 3 | hu_tile | string |
@@ -3488,7 +3488,7 @@ No fields
 ## TingPaiInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | tile | string |
 | 2 | haveyi | bool |
 | 3 | yiman | bool |
@@ -3502,7 +3502,7 @@ No fields
 ## TingPaiDiscardInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | tile | string |
 | 2 | zhenting | bool |
 | 3 | infos | [TingPaiInfo](#TingPaiInfo) |
@@ -3510,13 +3510,13 @@ No fields
 ## GameEnd
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | scores | int32 |
 
 ## ActionDiscardTile
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | seat | uint32 |
 | 2 | tile | string |
 | 3 | is_liqi | bool |
@@ -3532,7 +3532,7 @@ No fields
 ## RecordDiscardTile
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | seat | uint32 |
 | 2 | tile | string |
 | 3 | is_liqi | bool |
@@ -3548,7 +3548,7 @@ No fields
 ## ActionDealTile
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | seat | uint32 |
 | 2 | tile | string |
 | 3 | left_tile_count | uint32 |
@@ -3563,7 +3563,7 @@ No fields
 ## RecordDealTile
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | seat | uint32 |
 | 2 | tile | string |
 | 3 | left_tile_count | uint32 |
@@ -3577,7 +3577,7 @@ No fields
 ## ActionChiPengGang
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | seat | uint32 |
 | 2 | type | uint32 |
 | 3 | tiles | string |
@@ -3592,7 +3592,7 @@ No fields
 ## RecordChiPengGang
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | seat | uint32 |
 | 2 | type | uint32 |
 | 3 | tiles | string |
@@ -3606,7 +3606,7 @@ No fields
 ## ActionAnGangAddGang
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | seat | uint32 |
 | 2 | type | uint32 |
 | 3 | tiles | string |
@@ -3619,7 +3619,7 @@ No fields
 ## RecordAnGangAddGang
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | seat | uint32 |
 | 2 | type | uint32 |
 | 3 | tiles | string |
@@ -3630,7 +3630,7 @@ No fields
 ## ActionBaBei
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | seat | uint32 |
 | 4 | operation | [OptionalOperationList](#OptionalOperationList) |
 | 6 | doras | string |
@@ -3643,7 +3643,7 @@ No fields
 ## RecordBaBei
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | seat | uint32 |
 | 6 | doras | string |
 | 7 | operations | [OptionalOperationList](#OptionalOperationList) |
@@ -3654,7 +3654,7 @@ No fields
 ## ActionHule
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | hules | [HuleInfo](#HuleInfo) |
 | 2 | old_scores | int32 |
 | 3 | delta_scores | int32 |
@@ -3667,7 +3667,7 @@ No fields
 ## RecordHule
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | hules | [HuleInfo](#HuleInfo) |
 | 2 | old_scores | int32 |
 | 3 | delta_scores | int32 |
@@ -3680,7 +3680,7 @@ No fields
 ## ActionLiuJu
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | type | uint32 |
 | 2 | gameend | [GameEnd](#GameEnd) |
 | 3 | seat | uint32 |
@@ -3692,7 +3692,7 @@ No fields
 ## RecordLiuJu
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | type | uint32 |
 | 2 | gameend | [GameEnd](#GameEnd) |
 | 3 | seat | uint32 |
@@ -3704,7 +3704,7 @@ No fields
 ## NoTilePlayerInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 3 | tingpai | bool |
 | 4 | hand | string |
 | 5 | tings | [TingPaiInfo](#TingPaiInfo) |
@@ -3712,7 +3712,7 @@ No fields
 ## NoTileScoreInfo
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | seat | uint32 |
 | 2 | old_scores | int32 |
 | 3 | delta_scores | int32 |
@@ -3724,7 +3724,7 @@ No fields
 ## ActionNoTile
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | liujumanguan | bool |
 | 2 | players | [NoTilePlayerInfo](#NoTilePlayerInfo) |
 | 3 | scores | [NoTileScoreInfo](#NoTileScoreInfo) |
@@ -3734,7 +3734,7 @@ No fields
 ## RecordNoTile
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | liujumanguan | bool |
 | 2 | players | [NoTilePlayerInfo](#NoTilePlayerInfo) |
 | 3 | scores | [NoTileScoreInfo](#NoTileScoreInfo) |
@@ -3744,7 +3744,7 @@ No fields
 ## PlayerLeaving
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | seat | uint32 |
 
 ## FastTest
@@ -3769,7 +3769,7 @@ No fields
 ## ReqAuthGame
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | account_id | uint32 |
 | 2 | token | string |
 | 3 | game_uuid | string |
@@ -3777,7 +3777,7 @@ No fields
 ## ResAuthGame
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | players | [PlayerGameView](#PlayerGameView) |
 | 3 | seat_list | uint32 |
@@ -3788,7 +3788,7 @@ No fields
 ## GameRestore
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | snapshot | [GameSnapshot](#GameSnapshot) |
 | 2 | actions | [ActionPrototype](#ActionPrototype) |
 | 3 | passed_waiting_time | uint32 |
@@ -3799,7 +3799,7 @@ No fields
 ## ResEnterGame
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | is_end | bool |
 | 3 | step | uint32 |
@@ -3808,14 +3808,14 @@ No fields
 ## ReqSyncGame
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | round_id | string |
 | 2 | step | uint32 |
 
 ## ResSyncGame
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | is_end | bool |
 | 3 | step | uint32 |
@@ -3824,7 +3824,7 @@ No fields
 ## ReqSelfOperation
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | type | uint32 |
 | 2 | index | uint32 |
 | 3 | tile | string |
@@ -3836,7 +3836,7 @@ No fields
 ## ReqChiPengGang
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | type | uint32 |
 | 2 | index | uint32 |
 | 3 | cancel_operation | bool |
@@ -3845,33 +3845,33 @@ No fields
 ## ReqBroadcastInGame
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | content | string |
 | 2 | except_self | bool |
 
 ## ReqGMCommandInGaming
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | json_data | string |
 
 ## ResGamePlayerState
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | error | [Error](#Error) |
 | 2 | state_list | [GamePlayerState](#GamePlayerState) |
 
 ## ReqVoteGameEnd
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | yes | bool |
 
 ## ResGameEndVote
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | success | bool |
 | 2 | vote_cd_end_time | uint32 |
 | 3 | error | [Error](#Error) |
@@ -3879,59 +3879,59 @@ No fields
 ## ReqAuthObserve
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | token | string |
 
 ## ResStartObserve
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | head | [GameLiveHead](#GameLiveHead) |
 | 2 | passed | [GameLiveSegment](#GameLiveSegment) |
 
 ## NotifyNewGame
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | game_uuid | string |
 | 2 | player_list | string |
 
 ## NotifyPlayerLoadGameReady
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | ready_id_list | uint32 |
 
 ## NotifyGameBroadcast
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | seat | uint32 |
 | 2 | content | string |
 
 ## NotifyGameEndResult
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | result | [GameEndResult](#GameEndResult) |
 
 ## NotifyGameTerminate
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | reason | string |
 
 ## NotifyPlayerConnectionState
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | seat | uint32 |
 | 2 | state | [GamePlayerState](#GamePlayerState) |
 
 ## NotifyAccountLevelChange
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | origin | [AccountLevel](#AccountLevel) |
 | 2 | final | [AccountLevel](#AccountLevel) |
 | 3 | type | uint32 |
@@ -3939,7 +3939,7 @@ No fields
 ## NotifyGameFinishReward
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | mode_id | uint32 |
 | 2 | level_change | [LevelChange](#LevelChange) |
 | 3 | match_chest | [MatchChest](#MatchChest) |
@@ -3949,31 +3949,31 @@ No fields
 ## NotifyActivityReward
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | activity_reward | [ActivityReward](#ActivityReward) |
 
 ## NotifyActivityPoint
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | activity_points | [ActivityPoint](#ActivityPoint) |
 
 ## NotifyLeaderboardPoint
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | leaderboard_points | [LeaderboardPoint](#LeaderboardPoint) |
 
 ## NotifyGamePause
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | paused | bool |
 
 ## NotifyEndGameVote
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | results | [VoteResult](#VoteResult) |
 | 2 | start_time | uint32 |
 | 3 | duration_time | uint32 |
@@ -3981,6 +3981,6 @@ No fields
 ## NotifyObserveData
 
 | N | Field name | Field type |
-| - | - | - |
+| --- | --- | --- |
 | 1 | unit | [GameLiveUnit](#GameLiveUnit) |
 
