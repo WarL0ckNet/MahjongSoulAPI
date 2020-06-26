@@ -68,13 +68,11 @@ const getServers = (serv = null, nocheck = false) => {
 			const reqVersion = https.request(ms_opts, (resVersion) => {
 				resVersion.on('data', (dataVersion) => {
 					let resVers = JSON.parse(dataVersion);
-					//console.log('Version:', JSON.stringify(resVers, null, 2));
 					ms_opts.path = `/v${resVers.version}/config.json`;
 					// Запрос конфигурации
 					const reqConfig = https.request(ms_opts, (resConfig) => {
 						resConfig.on('data', (dataConfig) => {
 							let resCfg = JSON.parse(dataConfig);
-							//console.log('Config:', JSON.stringify(resCfg, null, 2));
 							const mainland = url.parse(resCfg.ip[0].region_urls[0]);
 							ms_opts.hostname = mainland.hostname;
 							ms_opts.port = mainland.port;
@@ -88,7 +86,6 @@ const getServers = (serv = null, nocheck = false) => {
 							const reqServers = https.request(ms_opts, (resServers) => {
 								resServers.on('data', (dataServers) => {
 									let resServs = JSON.parse(dataServers);
-									//console.log('Servers:', JSON.stringify(resServs, null, 2));
 									if (serv && !nocheck) {
 										if (resServs.servers.indexOf(serv) >= 0) {
 											resolve([serv]);
@@ -152,19 +149,11 @@ const sendRequest = (server, package_name, service_name, method_name, params, id
 			client = new WebSocketClient(),
 			service = proto.lookup(`${package_name}.${service_name}`),
 			method = service.methods[method_name].resolve(),
-			req = method.resolvedRequestType,
 			res = method.resolvedResponseType,
 			wrapper = proto.lookupType(`${package_name}.Wrapper`);
-		let req_str = wrapper.create({
-			//name: `${req.name}`,
-			name: `${package_name}.${req.name}`,
-			//data: params
-			data: req.encode(params).finish()
-		});
 		let meth_str = wrapper.create({
 			name: `${package_name}.${service_name}.${method_name}`,
 			data: wrapper.encode(params).finish()
-				//data: wrapper.encode(req_str).finish()
 		});
 		let msg = wrapper.encode(meth_str).finish(),
 			pkt_type = [Number(2)],
@@ -308,11 +297,9 @@ if (!args || args.help) {
 						console.log(`Use server: ${server}`);
 						let idx = Math.floor(60007 * Math.random()),
 							params = {
-								//account_id: 117411310
-								code: '526091',
+								code: '111111',
 								operation: 0
 							};
-						//sendRequest(server, 'lq', 'Lobby', 'fetchConnectionInfo', params, idx).then(
 						sendRequest(server, 'lq', 'Lobby', 'verfifyCodeForSecure', params, idx).then(
 							resSend => {
 								console.log(`Result: ${JSON.stringify(resSend, null, 2)}`);
