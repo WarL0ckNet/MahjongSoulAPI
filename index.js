@@ -353,7 +353,7 @@ if (!args || args.help) {
 						doc += "| N | Field name | Field type |\n| --- | --- | --- |\n";
 						for (let i = 1; i <= fields.length; i++) {
 							if (fields[i]) {
-								doc += `| ${i} | ${fields[i].name} | ${(types.test(fields[i].type) ? fields[i].type : '['+fields[i].type+'](#'+fields[i].type+')')} |\n`;
+								doc += `| ${i} | ${fields[i].name} | ${(types.test(fields[i].type) ? fields[i].type : '['+fields[i].type+'](#'+fields[i].type.toLowerCase()+')')} |\n`;
 							}
 						}
 					} else {
@@ -363,7 +363,7 @@ if (!args || args.help) {
 				} else if (item.methods) {
 					const methods = item.methods;
 					for (const [key, method] of Object.entries(methods)) {
-						doc += `* ${key}([${method.responseType}](#${method.responseType}) return [${method.requestType}](#${method.requestType})\n`;
+						doc += `* ${key}([${method.responseType}](#${method.responseType.toLowerCase()}) return [${method.requestType}](#${method.requestType.toLowerCase()})\n`;
 					}
 
 				}

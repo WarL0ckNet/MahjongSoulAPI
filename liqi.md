@@ -37,7 +37,7 @@
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | update_list | [PlayerBaseView](#PlayerBaseView) |
+| 1 | update_list | [PlayerBaseView](#playerbaseview) |
 | 2 | remove_list | uint32 |
 | 3 | owner_id | uint32 |
 | 4 | robot_count | uint32 |
@@ -55,14 +55,14 @@ No fields
 | N | Field name | Field type |
 | --- | --- | --- |
 | 1 | target_id | uint32 |
-| 2 | active_state | [AccountActiveState](#AccountActiveState) |
+| 2 | active_state | [AccountActiveState](#accountactivestate) |
 
 ## NotifyFriendViewChange
 
 | N | Field name | Field type |
 | --- | --- | --- |
 | 1 | target_id | uint32 |
-| 2 | base | [PlayerBaseView](#PlayerBaseView) |
+| 2 | base | [PlayerBaseView](#playerbaseview) |
 
 ## NotifyFriendChange
 
@@ -70,7 +70,7 @@ No fields
 | --- | --- | --- |
 | 1 | account_id | uint32 |
 | 2 | type | uint32 |
-| 3 | friend | [Friend](#Friend) |
+| 3 | friend | [Friend](#friend) |
 
 ## NotifyNewFriendApply
 
@@ -84,7 +84,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | sender | [PlayerBaseView](#PlayerBaseView) |
+| 1 | sender | [PlayerBaseView](#playerbaseview) |
 | 2 | type | uint32 |
 | 3 | content | string |
 
@@ -92,7 +92,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | update | [AccountUpdate](#AccountUpdate) |
+| 1 | update | [AccountUpdate](#accountupdate) |
 
 ## NotifyAnotherLogin
 
@@ -106,14 +106,14 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | announcements | [Announcement](#Announcement) |
+| 1 | announcements | [Announcement](#announcement) |
 | 2 | sort | uint32 |
 
 ## NotifyNewMail
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | mail | [Mail](#Mail) |
+| 1 | mail | [Mail](#mail) |
 
 ## NotifyDeleteMail
 
@@ -131,7 +131,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | progresses | [TaskProgress](#TaskProgress) |
+| 1 | progresses | [TaskProgress](#taskprogress) |
 | 2 | max_daily_task_count | uint32 |
 | 3 | refresh_count | uint32 |
 
@@ -139,19 +139,19 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | progresses | [TaskProgress](#TaskProgress) |
+| 1 | progresses | [TaskProgress](#taskprogress) |
 
 ## NotifyActivityPeriodTaskUpdate
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | progresses | [TaskProgress](#TaskProgress) |
+| 1 | progresses | [TaskProgress](#taskprogress) |
 
 ## NotifyAccountRandomTaskUpdate
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | progresses | [TaskProgress](#TaskProgress) |
+| 1 | progresses | [TaskProgress](#taskprogress) |
 
 ## NotifyNewComment
 
@@ -161,7 +161,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | notice | [RollingNotice](#RollingNotice) |
+| 1 | notice | [RollingNotice](#rollingnotice) |
 
 ## NotifyGiftSendRefresh
 
@@ -171,7 +171,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | shop_info | [ShopInfo](#ShopInfo) |
+| 1 | shop_info | [ShopInfo](#shopinfo) |
 
 ## NotifyVipLevelChange
 
@@ -188,7 +188,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | settings | [ServerSettings](#ServerSettings) |
+| 1 | settings | [ServerSettings](#serversettings) |
 
 ## NotifyPayResult
 
@@ -198,7 +198,7 @@ No fields
 | 2 | order_id | string |
 | 3 | goods_id | uint32 |
 | 4 | new_month_ticket | uint32 |
-| 5 | resource_modify | [ResourceModify](#ResourceModify) |
+| 5 | resource_modify | [ResourceModify](#resourcemodify) |
 
 ## NotifyCustomContestAccountMsg
 
@@ -217,8 +217,8 @@ No fields
 | 1 | unique_id | uint32 |
 | 2 | type | uint32 |
 | 3 | uuid | string |
-| 4 | game_start | [CustomizedContestGameStart](#CustomizedContestGameStart) |
-| 5 | game_end | [CustomizedContestGameEnd](#CustomizedContestGameEnd) |
+| 4 | game_start | [CustomizedContestGameStart](#customizedcontestgamestart) |
+| 5 | game_end | [CustomizedContestGameEnd](#customizedcontestgameend) |
 
 ## NotifyCustomContestState
 
@@ -231,7 +231,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | new_activities | [Activity](#Activity) |
+| 1 | new_activities | [Activity](#activity) |
 | 2 | end_activities | uint32 |
 
 ## NotifyAFKResult
@@ -274,14 +274,14 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 
 ## ResAccountUpdate
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | update | [AccountUpdate](#AccountUpdate) |
+| 1 | error | [Error](#error) |
+| 2 | update | [AccountUpdate](#accountupdate) |
 
 ## AntiAddiction
 
@@ -294,12 +294,12 @@ No fields
 | N | Field name | Field type |
 | --- | --- | --- |
 | 1 | final_position_counts | uint32 |
-| 2 | recent_round | [RoundSummary](#RoundSummary) |
-| 3 | recent_hu | [HuSummary](#HuSummary) |
-| 4 | highest_hu | [HighestHuRecord](#HighestHuRecord) |
-| 6 | recent_20_hu_summary | [Liqi20Summary](#Liqi20Summary) |
-| 7 | recent_10_hu_summary | [LiQi10Summary](#LiQi10Summary) |
-| 8 | recent_10_game_result | [GameResult](#GameResult) |
+| 2 | recent_round | [RoundSummary](#roundsummary) |
+| 3 | recent_hu | [HuSummary](#husummary) |
+| 4 | highest_hu | [HighestHuRecord](#highesthurecord) |
+| 6 | recent_20_hu_summary | [Liqi20Summary](#liqi20summary) |
+| 7 | recent_10_hu_summary | [LiQi10Summary](#liqi10summary) |
+| 8 | recent_10_game_result | [GameResult](#gameresult) |
 
 ## AccountStatisticData
 
@@ -307,7 +307,7 @@ No fields
 | --- | --- | --- |
 | 1 | mahjong_category | uint32 |
 | 2 | game_category | uint32 |
-| 3 | statistic | [AccountMahjongStatistic](#AccountMahjongStatistic) |
+| 3 | statistic | [AccountMahjongStatistic](#accountmahjongstatistic) |
 
 ## AccountLevel
 
@@ -332,7 +332,7 @@ No fields
 | 3 | login_time | uint32 |
 | 4 | logout_time | uint32 |
 | 5 | room_id | uint32 |
-| 6 | anti_addiction | [AntiAddiction](#AntiAddiction) |
+| 6 | anti_addiction | [AntiAddiction](#antiaddiction) |
 | 7 | title | uint32 |
 | 8 | signature | string |
 | 9 | email | string |
@@ -344,12 +344,12 @@ No fields
 | 15 | birthday | int32 |
 | 16 | phone | string |
 | 17 | phone_verify | uint32 |
-| 18 | platform_diamond | [PlatformDiamond](#PlatformDiamond) |
-| 21 | level | [AccountLevel](#AccountLevel) |
-| 22 | level3 | [AccountLevel](#AccountLevel) |
+| 18 | platform_diamond | [PlatformDiamond](#platformdiamond) |
+| 21 | level | [AccountLevel](#accountlevel) |
+| 22 | level3 | [AccountLevel](#accountlevel) |
 | 23 | avatar_frame | uint32 |
 | 24 | skin_ticket | uint32 |
-| 25 | platform_skin_ticket | [PlatformSkinTicket](#PlatformSkinTicket) |
+| 25 | platform_skin_ticket | [PlatformSkinTicket](#platformskinticket) |
 | 26 | verified | uint32 |
 
 ## AccountOwnerData
@@ -362,18 +362,18 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | numerical | [NumericalUpdate](#NumericalUpdate) |
-| 2 | character | [CharacterUpdate](#CharacterUpdate) |
-| 3 | bag | [BagUpdate](#BagUpdate) |
-| 4 | achievement | [AchievementUpdate](#AchievementUpdate) |
-| 5 | shilian | [AccountShiLian](#AccountShiLian) |
-| 6 | daily_task | [DailyTaskUpdate](#DailyTaskUpdate) |
-| 7 | title | [TitleUpdate](#TitleUpdate) |
+| 1 | numerical | [NumericalUpdate](#numericalupdate) |
+| 2 | character | [CharacterUpdate](#characterupdate) |
+| 3 | bag | [BagUpdate](#bagupdate) |
+| 4 | achievement | [AchievementUpdate](#achievementupdate) |
+| 5 | shilian | [AccountShiLian](#accountshilian) |
+| 6 | daily_task | [DailyTaskUpdate](#dailytaskupdate) |
+| 7 | title | [TitleUpdate](#titleupdate) |
 | 8 | new_recharged_list | uint32 |
-| 9 | activity_task | [TaskUpdate](#TaskUpdate) |
-| 10 | activity_flip_task | [TaskUpdate](#TaskUpdate) |
-| 11 | activity_period_task | [TaskUpdate](#TaskUpdate) |
-| 12 | activity_random_task | [TaskUpdate](#TaskUpdate) |
+| 9 | activity_task | [TaskUpdate](#taskupdate) |
+| 10 | activity_flip_task | [TaskUpdate](#taskupdate) |
+| 11 | activity_period_task | [TaskUpdate](#taskupdate) |
+| 12 | activity_random_task | [TaskUpdate](#taskupdate) |
 
 ## GameMetaData
 
@@ -389,7 +389,7 @@ No fields
 | --- | --- | --- |
 | 1 | game_uuid | string |
 | 2 | category | uint32 |
-| 3 | meta | [GameMetaData](#GameMetaData) |
+| 3 | meta | [GameMetaData](#gamemetadata) |
 
 ## AccountCacheView
 
@@ -405,9 +405,9 @@ No fields
 | 8 | title | uint32 |
 | 9 | avatar_id | uint32 |
 | 10 | vip | uint32 |
-| 11 | level | [AccountLevel](#AccountLevel) |
-| 12 | playing_game | [AccountPlayingGame](#AccountPlayingGame) |
-| 13 | level3 | [AccountLevel](#AccountLevel) |
+| 11 | level | [AccountLevel](#accountlevel) |
+| 12 | playing_game | [AccountPlayingGame](#accountplayinggame) |
+| 13 | level3 | [AccountLevel](#accountlevel) |
 | 14 | avatar_frame | uint32 |
 | 15 | verified | uint32 |
 | 16 | ban_deadline | uint32 |
@@ -421,8 +421,8 @@ No fields
 | 2 | avatar_id | uint32 |
 | 3 | title | uint32 |
 | 4 | nickname | string |
-| 5 | level | [AccountLevel](#AccountLevel) |
-| 6 | level3 | [AccountLevel](#AccountLevel) |
+| 5 | level | [AccountLevel](#accountlevel) |
+| 6 | level3 | [AccountLevel](#accountlevel) |
 | 7 | avatar_frame | uint32 |
 | 8 | verified | uint32 |
 
@@ -434,12 +434,12 @@ No fields
 | 2 | avatar_id | uint32 |
 | 3 | title | uint32 |
 | 4 | nickname | string |
-| 5 | level | [AccountLevel](#AccountLevel) |
-| 6 | character | [Character](#Character) |
-| 7 | level3 | [AccountLevel](#AccountLevel) |
+| 5 | level | [AccountLevel](#accountlevel) |
+| 6 | character | [Character](#character) |
+| 7 | level3 | [AccountLevel](#accountlevel) |
 | 8 | avatar_frame | uint32 |
 | 9 | verified | uint32 |
-| 10 | views | [ViewSlot](#ViewSlot) |
+| 10 | views | [ViewSlot](#viewslot) |
 
 ## GameMode
 
@@ -448,8 +448,8 @@ No fields
 | 1 | mode | uint32 |
 | 4 | ai | bool |
 | 5 | extendinfo | string |
-| 6 | detail_rule | [GameDetailRule](#GameDetailRule) |
-| 7 | testing_environment | [GameTestingEnvironmentSet](#GameTestingEnvironmentSet) |
+| 6 | detail_rule | [GameDetailRule](#gamedetailrule) |
+| 7 | testing_environment | [GameTestingEnvironmentSet](#gametestingenvironmentset) |
 
 ## GameTestingEnvironmentSet
 
@@ -516,9 +516,9 @@ No fields
 | --- | --- | --- |
 | 1 | room_id | uint32 |
 | 2 | owner_id | uint32 |
-| 3 | mode | [GameMode](#GameMode) |
+| 3 | mode | [GameMode](#gamemode) |
 | 4 | max_player_count | uint32 |
-| 5 | persons | [PlayerGameView](#PlayerGameView) |
+| 5 | persons | [PlayerGameView](#playergameview) |
 | 6 | ready_list | uint32 |
 | 7 | is_playing | bool |
 | 8 | public_live | bool |
@@ -529,7 +529,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | players | [PlayerItem](#PlayerItem) |
+| 1 | players | [PlayerItem](#playeritem) |
 
 ## GameConnectInfo
 
@@ -552,7 +552,7 @@ No fields
 | --- | --- | --- |
 | 1 | record_time | uint32 |
 | 2 | limit_source_id | uint32 |
-| 3 | records | [ItemGainRecord](#ItemGainRecord) |
+| 3 | records | [ItemGainRecord](#itemgainrecord) |
 
 ## Item
 
@@ -565,15 +565,15 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | items | [Item](#Item) |
-| 2 | daily_gain_record | [ItemGainRecords](#ItemGainRecords) |
+| 1 | items | [Item](#item) |
+| 2 | daily_gain_record | [ItemGainRecords](#itemgainrecords) |
 
 ## BagUpdate
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | update_items | [Item](#Item) |
-| 2 | update_daily_gain_record | [ItemGainRecords](#ItemGainRecords) |
+| 1 | update_items | [Item](#item) |
+| 2 | update_daily_gain_record | [ItemGainRecords](#itemgainrecords) |
 
 ## RewardSlot
 
@@ -586,8 +586,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | reward | [RewardSlot](#RewardSlot) |
-| 2 | replace | [RewardSlot](#RewardSlot) |
+| 1 | reward | [RewardSlot](#rewardslot) |
+| 2 | replace | [RewardSlot](#rewardslot) |
 
 ## RewardPlusResult
 
@@ -595,14 +595,14 @@ No fields
 | --- | --- | --- |
 | 1 | id | uint32 |
 | 2 | count | uint32 |
-| 3 | exchange | [Exchange](#Exchange) |
+| 3 | exchange | [Exchange](#exchange) |
 
 ## ExecuteReward
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | reward | [RewardSlot](#RewardSlot) |
-| 2 | replace | [RewardSlot](#RewardSlot) |
+| 1 | reward | [RewardSlot](#rewardslot) |
+| 2 | replace | [RewardSlot](#rewardslot) |
 | 3 | replace_count | uint32 |
 
 ## Mail
@@ -614,7 +614,7 @@ No fields
 | 3 | take_attachment | bool |
 | 4 | title | string |
 | 5 | content | string |
-| 6 | attachments | [RewardSlot](#RewardSlot) |
+| 6 | attachments | [RewardSlot](#rewardslot) |
 | 7 | create_time | uint32 |
 | 8 | expire_time | uint32 |
 | 9 | reference_id | uint32 |
@@ -639,13 +639,13 @@ No fields
 | 5 | gold_earn_sum | [float](#float) |
 | 6 | round_count_sum | uint32 |
 | 7 | dadian_sum | [float](#float) |
-| 8 | round_end | [RoundEndData](#RoundEndData) |
+| 8 | round_end | [RoundEndData](#roundenddata) |
 | 9 | ming_count_sum | uint32 |
 | 10 | liqi_count_sum | uint32 |
 | 11 | xun_count_sum | uint32 |
 | 12 | highest_lianzhuang | uint32 |
 | 13 | score_earn_sum | uint32 |
-| 14 | rank_score | [RankScore](#RankScore) |
+| 14 | rank_score | [RankScore](#rankscore) |
 
 ## AccountStatisticByFan
 
@@ -659,33 +659,33 @@ No fields
 | N | Field name | Field type |
 | --- | --- | --- |
 | 1 | mahjong_category | uint32 |
-| 2 | fan | [AccountStatisticByFan](#AccountStatisticByFan) |
+| 2 | fan | [AccountStatisticByFan](#accountstatisticbyfan) |
 | 3 | liujumanguan | uint32 |
 
 ## AccountDetailStatistic
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | game_mode | [AccountStatisticByGameMode](#AccountStatisticByGameMode) |
-| 2 | fan | [AccountStatisticByFan](#AccountStatisticByFan) |
+| 1 | game_mode | [AccountStatisticByGameMode](#accountstatisticbygamemode) |
+| 2 | fan | [AccountStatisticByFan](#accountstatisticbyfan) |
 | 3 | liujumanguan | uint32 |
-| 4 | fan_achieved | [AccountFanAchieved](#AccountFanAchieved) |
+| 4 | fan_achieved | [AccountFanAchieved](#accountfanachieved) |
 
 ## AccountDetailStatisticByCategory
 
 | N | Field name | Field type |
 | --- | --- | --- |
 | 1 | category | uint32 |
-| 2 | detail_statistic | [AccountDetailStatistic](#AccountDetailStatistic) |
+| 2 | detail_statistic | [AccountDetailStatistic](#accountdetailstatistic) |
 
 ## AccountDetailStatisticV2
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | friend_room_statistic | [AccountDetailStatistic](#AccountDetailStatistic) |
-| 2 | rank_statistic | [RankStatistic](#RankStatistic) |
-| 3 | customized_contest_statistic | [CustomizedContestStatistic](#CustomizedContestStatistic) |
-| 4 | leisure_match_statistic | [AccountDetailStatistic](#AccountDetailStatistic) |
+| 1 | friend_room_statistic | [AccountDetailStatistic](#accountdetailstatistic) |
+| 2 | rank_statistic | [RankStatistic](#rankstatistic) |
+| 3 | customized_contest_statistic | [CustomizedContestStatistic](#customizedconteststatistic) |
+| 4 | leisure_match_statistic | [AccountDetailStatistic](#accountdetailstatistic) |
 
 ## AccountShiLian
 
@@ -727,8 +727,8 @@ No fields
 | N | Field name | Field type |
 | --- | --- | --- |
 | 1 | category | uint32 |
-| 2 | mode | [GameMode](#GameMode) |
-| 3 | meta | [GameMetaData](#GameMetaData) |
+| 2 | mode | [GameMode](#gamemode) |
+| 3 | meta | [GameMetaData](#gamemetadata) |
 
 ## AccountActiveState
 
@@ -738,14 +738,14 @@ No fields
 | 2 | login_time | uint32 |
 | 3 | logout_time | uint32 |
 | 4 | is_online | bool |
-| 5 | playing | [AccountPlayingGame](#AccountPlayingGame) |
+| 5 | playing | [AccountPlayingGame](#accountplayinggame) |
 
 ## Friend
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | base | [PlayerBaseView](#PlayerBaseView) |
-| 2 | state | [AccountActiveState](#AccountActiveState) |
+| 1 | base | [PlayerBaseView](#playerbaseview) |
+| 2 | state | [AccountActiveState](#accountactivestate) |
 
 ## GameLiveUnit
 
@@ -759,7 +759,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | actions | [GameLiveUnit](#GameLiveUnit) |
+| 1 | actions | [GameLiveUnit](#gameliveunit) |
 
 ## GameLiveSegmentUri
 
@@ -774,8 +774,8 @@ No fields
 | --- | --- | --- |
 | 1 | uuid | string |
 | 2 | start_time | uint32 |
-| 3 | game_config | [GameConfig](#GameConfig) |
-| 4 | players | [PlayerGameView](#PlayerGameView) |
+| 3 | game_config | [GameConfig](#gameconfig) |
+| 4 | players | [PlayerGameView](#playergameview) |
 | 5 | seat_list | uint32 |
 
 ## GameNewRoundState
@@ -800,7 +800,7 @@ No fields
 | --- | --- | --- |
 | 1 | comment_id | uint32 |
 | 2 | timestamp | uint32 |
-| 3 | commenter | [PlayerBaseView](#PlayerBaseView) |
+| 3 | commenter | [PlayerBaseView](#playerbaseview) |
 | 4 | content | string |
 | 5 | is_banned | uint32 |
 
@@ -837,7 +837,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | goods | [BillingGoods](#BillingGoods) |
+| 1 | goods | [BillingGoods](#billinggoods) |
 | 2 | currency_code | string |
 | 3 | currency_price | uint32 |
 | 4 | sort_weight | uint32 |
@@ -849,7 +849,7 @@ No fields
 | 1 | charid | uint32 |
 | 2 | level | uint32 |
 | 3 | exp | uint32 |
-| 4 | views | [ViewSlot](#ViewSlot) |
+| 4 | views | [ViewSlot](#viewslot) |
 | 5 | skin | uint32 |
 | 6 | is_upgraded | bool |
 | 7 | extra_emoji | uint32 |
@@ -866,9 +866,9 @@ No fields
 | N | Field name | Field type |
 | --- | --- | --- |
 | 1 | goods | uint32 |
-| 2 | buy_records | [BuyRecord](#BuyRecord) |
-| 3 | free_refresh | [RefreshCount](#RefreshCount) |
-| 4 | cost_refresh | [RefreshCount](#RefreshCount) |
+| 2 | buy_records | [BuyRecord](#buyrecord) |
+| 3 | free_refresh | [RefreshCount](#refreshcount) |
+| 4 | cost_refresh | [RefreshCount](#refreshcount) |
 
 ## MonthTicketInfo
 
@@ -882,8 +882,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | zhp | [ZHPShop](#ZHPShop) |
-| 2 | buy_records | [BuyRecord](#BuyRecord) |
+| 1 | zhp | [ZHPShop](#zhpshop) |
+| 2 | buy_records | [BuyRecord](#buyrecord) |
 | 3 | last_refresh_time | uint32 |
 
 ## ChangeNicknameRecord
@@ -898,7 +898,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 3 | payment_setting | [PaymentSetting](#PaymentSetting) |
+| 3 | payment_setting | [PaymentSetting](#paymentsetting) |
 
 ## PaymentSetting
 
@@ -907,8 +907,8 @@ No fields
 | 1 | open_payment | uint32 |
 | 2 | payment_info_show_type | uint32 |
 | 3 | payment_info | string |
-| 4 | wechat | [WechatData](#WechatData) |
-| 5 | alipay | [AlipayData](#AlipayData) |
+| 4 | wechat | [WechatData](#wechatdata) |
+| 5 | alipay | [AlipayData](#alipaydata) |
 
 ## AccountSetting
 
@@ -994,7 +994,7 @@ No fields
 | 8 | finish_time | uint32 |
 | 9 | open | bool |
 | 10 | rank_rule | uint32 |
-| 11 | game_mode | [GameMode](#GameMode) |
+| 11 | game_mode | [GameMode](#gamemode) |
 | 12 | private_notice | string |
 | 13 | observer_switch | uint32 |
 
@@ -1015,21 +1015,21 @@ No fields
 | 1 | uuid | string |
 | 2 | start_time | uint32 |
 | 3 | end_time | uint32 |
-| 5 | config | [GameConfig](#GameConfig) |
-| 11 | accounts | [AccountInfo](#AccountInfo) |
-| 12 | result | [GameEndResult](#GameEndResult) |
+| 5 | config | [GameConfig](#gameconfig) |
+| 11 | accounts | [AccountInfo](#accountinfo) |
+| 12 | result | [GameEndResult](#gameendresult) |
 
 ## CustomizedContestGameStart
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | players | [Item](#Item) |
+| 1 | players | [Item](#item) |
 
 ## CustomizedContestGameEnd
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | players | [Item](#Item) |
+| 1 | players | [Item](#item) |
 
 ## Activity
 
@@ -1068,8 +1068,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | hupai | [HuPai](#HuPai) |
-| 2 | fans | [Fan](#Fan) |
+| 1 | hupai | [HuPai](#hupai) |
+| 2 | fans | [Fan](#fan) |
 | 3 | score | uint32 |
 | 4 | xun | uint32 |
 | 5 | title_id | uint32 |
@@ -1093,7 +1093,7 @@ No fields
 | 5 | is_fulu | bool |
 | 6 | is_liujumanguan | bool |
 | 7 | lian_zhuang | uint32 |
-| 8 | hu | [GameRoundHuData](#GameRoundHuData) |
+| 8 | hu | [GameRoundHuData](#gameroundhudata) |
 
 ## GameRoundPlayer
 
@@ -1101,7 +1101,7 @@ No fields
 | --- | --- | --- |
 | 1 | score | int32 |
 | 2 | rank | uint32 |
-| 3 | result | [GameRoundPlayerResult](#GameRoundPlayerResult) |
+| 3 | result | [GameRoundPlayerResult](#gameroundplayerresult) |
 
 ## GameRoundSnapshot
 
@@ -1109,7 +1109,7 @@ No fields
 | --- | --- | --- |
 | 1 | ju | uint32 |
 | 2 | ben | uint32 |
-| 3 | players | [GameRoundPlayer](#GameRoundPlayer) |
+| 3 | players | [GameRoundPlayer](#gameroundplayer) |
 
 ## GameFinalSnapshot
 
@@ -1118,17 +1118,17 @@ No fields
 | 1 | uuid | string |
 | 2 | state | uint32 |
 | 3 | category | uint32 |
-| 4 | mode | [GameMode](#GameMode) |
-| 5 | meta | [GameMetaData](#GameMetaData) |
-| 6 | calculate_param | [CalculateParam](#CalculateParam) |
+| 4 | mode | [GameMode](#gamemode) |
+| 5 | meta | [GameMetaData](#gamemetadata) |
+| 6 | calculate_param | [CalculateParam](#calculateparam) |
 | 7 | create_time | uint32 |
 | 8 | start_time | uint32 |
 | 9 | finish_time | uint32 |
-| 10 | seats | [GameSeat](#GameSeat) |
-| 11 | rounds | [GameRoundSnapshot](#GameRoundSnapshot) |
-| 12 | account_views | [PlayerGameView](#PlayerGameView) |
-| 13 | final_players | [FinalPlayer](#FinalPlayer) |
-| 14 | afk_info | [AFKInfo](#AFKInfo) |
+| 10 | seats | [GameSeat](#gameseat) |
+| 11 | rounds | [GameRoundSnapshot](#gameroundsnapshot) |
+| 12 | account_views | [PlayerGameView](#playergameview) |
+| 13 | final_players | [FinalPlayer](#finalplayer) |
+| 14 | afk_info | [AFKInfo](#afkinfo) |
 
 ## RecordCollectedData
 
@@ -1185,8 +1185,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | game_rule | [ContestDetailRule](#ContestDetailRule) |
-| 2 | extra_rule | [ExtraRule](#ExtraRule) |
+| 1 | game_rule | [ContestDetailRule](#contestdetailrule) |
+| 2 | extra_rule | [ExtraRule](#extrarule) |
 
 ## GameRuleSetting
 
@@ -1197,215 +1197,215 @@ No fields
 | 3 | dora_count | uint32 |
 | 4 | thinking_type | uint32 |
 | 5 | use_detail_rule | bool |
-| 6 | detail_rule_v2 | [ContestDetailRuleV2](#ContestDetailRuleV2) |
+| 6 | detail_rule_v2 | [ContestDetailRuleV2](#contestdetailrulev2) |
 
 ## Lobby
 
-* fetchConnectionInfo([ResConnectionInfo](#ResConnectionInfo) return [ReqCommon](#ReqCommon)
-* signup([ResSignupAccount](#ResSignupAccount) return [ReqSignupAccount](#ReqSignupAccount)
-* login([ResLogin](#ResLogin) return [ReqLogin](#ReqLogin)
-* emailLogin([ResLogin](#ResLogin) return [ReqEmailLogin](#ReqEmailLogin)
-* oauth2Auth([ResOauth2Auth](#ResOauth2Auth) return [ReqOauth2Auth](#ReqOauth2Auth)
-* oauth2Check([ResOauth2Check](#ResOauth2Check) return [ReqOauth2Check](#ReqOauth2Check)
-* oauth2Signup([ResOauth2Signup](#ResOauth2Signup) return [ReqOauth2Signup](#ReqOauth2Signup)
-* oauth2Login([ResLogin](#ResLogin) return [ReqOauth2Login](#ReqOauth2Login)
-* dmmPreLogin([ResDMMPreLogin](#ResDMMPreLogin) return [ReqDMMPreLogin](#ReqDMMPreLogin)
-* createPhoneVerifyCode([ResCommon](#ResCommon) return [ReqCreatePhoneVerifyCode](#ReqCreatePhoneVerifyCode)
-* createEmailVerifyCode([ResCommon](#ResCommon) return [ReqCreateEmailVerifyCode](#ReqCreateEmailVerifyCode)
-* verfifyCodeForSecure([ResVerfiyCodeForSecure](#ResVerfiyCodeForSecure) return [ReqVerifyCodeForSecure](#ReqVerifyCodeForSecure)
-* bindPhoneNumber([ResCommon](#ResCommon) return [ReqBindPhoneNumber](#ReqBindPhoneNumber)
-* unbindPhoneNumber([ResCommon](#ResCommon) return [ReqUnbindPhoneNumber](#ReqUnbindPhoneNumber)
-* fetchPhoneLoginBind([ResFetchPhoneLoginBind](#ResFetchPhoneLoginBind) return [ReqCommon](#ReqCommon)
-* createPhoneLoginBind([ResCommon](#ResCommon) return [ReqCreatePhoneLoginBind](#ReqCreatePhoneLoginBind)
-* bindEmail([ResCommon](#ResCommon) return [ReqBindEmail](#ReqBindEmail)
-* modifyPassword([ResCommon](#ResCommon) return [ReqModifyPassword](#ReqModifyPassword)
-* bindAccount([ResCommon](#ResCommon) return [ReqBindAccount](#ReqBindAccount)
-* logout([ResLogout](#ResLogout) return [ReqLogout](#ReqLogout)
-* heatbeat([ResCommon](#ResCommon) return [ReqHeatBeat](#ReqHeatBeat)
-* loginBeat([ResCommon](#ResCommon) return [ReqLoginBeat](#ReqLoginBeat)
-* createNickname([ResCommon](#ResCommon) return [ReqCreateNickname](#ReqCreateNickname)
-* modifyNickname([ResCommon](#ResCommon) return [ReqModifyNickname](#ReqModifyNickname)
-* modifyBirthday([ResCommon](#ResCommon) return [ReqModifyBirthday](#ReqModifyBirthday)
-* fetchRoom([ResSelfRoom](#ResSelfRoom) return [ReqCommon](#ReqCommon)
-* createRoom([ResCreateRoom](#ResCreateRoom) return [ReqCreateRoom](#ReqCreateRoom)
-* joinRoom([ResJoinRoom](#ResJoinRoom) return [ReqJoinRoom](#ReqJoinRoom)
-* leaveRoom([ResCommon](#ResCommon) return [ReqCommon](#ReqCommon)
-* readyPlay([ResCommon](#ResCommon) return [ReqRoomReady](#ReqRoomReady)
-* dressingStatus([ResCommon](#ResCommon) return [ReqRoomDressing](#ReqRoomDressing)
-* startRoom([ResCommon](#ResCommon) return [ReqRoomStart](#ReqRoomStart)
-* kickPlayer([ResCommon](#ResCommon) return [ReqRoomKick](#ReqRoomKick)
-* modifyRoom([ResCommon](#ResCommon) return [ReqModifyRoom](#ReqModifyRoom)
-* matchGame([ResCommon](#ResCommon) return [ReqJoinMatchQueue](#ReqJoinMatchQueue)
-* cancelMatch([ResCommon](#ResCommon) return [ReqCancelMatchQueue](#ReqCancelMatchQueue)
-* fetchAccountInfo([ResAccountInfo](#ResAccountInfo) return [ReqAccountInfo](#ReqAccountInfo)
-* changeAvatar([ResCommon](#ResCommon) return [ReqChangeAvatar](#ReqChangeAvatar)
-* fetchAccountStatisticInfo([ResAccountStatisticInfo](#ResAccountStatisticInfo) return [ReqAccountStatisticInfo](#ReqAccountStatisticInfo)
-* fetchAccountCharacterInfo([ResAccountCharacterInfo](#ResAccountCharacterInfo) return [ReqCommon](#ReqCommon)
-* shopPurchase([ResShopPurchase](#ResShopPurchase) return [ReqShopPurchase](#ReqShopPurchase)
-* fetchGameRecord([ResGameRecord](#ResGameRecord) return [ReqGameRecord](#ReqGameRecord)
-* fetchGameRecordList([ResGameRecordList](#ResGameRecordList) return [ReqGameRecordList](#ReqGameRecordList)
-* fetchCollectedGameRecordList([ResCollectedGameRecordList](#ResCollectedGameRecordList) return [ReqCommon](#ReqCommon)
-* fetchGameRecordsDetail([ResGameRecordsDetail](#ResGameRecordsDetail) return [ReqGameRecordsDetail](#ReqGameRecordsDetail)
-* addCollectedGameRecord([ResAddCollectedGameRecord](#ResAddCollectedGameRecord) return [ReqAddCollectedGameRecord](#ReqAddCollectedGameRecord)
-* removeCollectedGameRecord([ResRemoveCollectedGameRecord](#ResRemoveCollectedGameRecord) return [ReqRemoveCollectedGameRecord](#ReqRemoveCollectedGameRecord)
-* changeCollectedGameRecordRemarks([ResChangeCollectedGameRecordRemarks](#ResChangeCollectedGameRecordRemarks) return [ReqChangeCollectedGameRecordRemarks](#ReqChangeCollectedGameRecordRemarks)
-* fetchLevelLeaderboard([ResLevelLeaderboard](#ResLevelLeaderboard) return [ReqLevelLeaderboard](#ReqLevelLeaderboard)
-* fetchMultiAccountBrief([ResMultiAccountBrief](#ResMultiAccountBrief) return [ReqMultiAccountId](#ReqMultiAccountId)
-* fetchFriendList([ResFriendList](#ResFriendList) return [ReqCommon](#ReqCommon)
-* fetchFriendApplyList([ResFriendApplyList](#ResFriendApplyList) return [ReqCommon](#ReqCommon)
-* applyFriend([ResCommon](#ResCommon) return [ReqApplyFriend](#ReqApplyFriend)
-* handleFriendApply([ResCommon](#ResCommon) return [ReqHandleFriendApply](#ReqHandleFriendApply)
-* removeFriend([ResCommon](#ResCommon) return [ReqRemoveFriend](#ReqRemoveFriend)
-* searchAccountById([ResSearchAccountById](#ResSearchAccountById) return [ReqSearchAccountById](#ReqSearchAccountById)
-* searchAccountByPattern([ResSearchAccountByPattern](#ResSearchAccountByPattern) return [ReqSearchAccountByPattern](#ReqSearchAccountByPattern)
-* fetchAccountState([ResAccountStates](#ResAccountStates) return [ReqAccountList](#ReqAccountList)
-* fetchBagInfo([ResBagInfo](#ResBagInfo) return [ReqCommon](#ReqCommon)
-* useBagItem([ResCommon](#ResCommon) return [ReqUseBagItem](#ReqUseBagItem)
-* openManualItem([ResCommon](#ResCommon) return [ReqOpenManualItem](#ReqOpenManualItem)
-* openRandomRewardItem([ResOpenRandomRewardItem](#ResOpenRandomRewardItem) return [ReqOpenRandomRewardItem](#ReqOpenRandomRewardItem)
-* composeShard([ResCommon](#ResCommon) return [ReqComposeShard](#ReqComposeShard)
-* fetchAnnouncement([ResAnnouncement](#ResAnnouncement) return [ReqCommon](#ReqCommon)
-* readAnnouncement([ResCommon](#ResCommon) return [ReqReadAnnouncement](#ReqReadAnnouncement)
-* fetchMailInfo([ResMailInfo](#ResMailInfo) return [ReqCommon](#ReqCommon)
-* readMail([ResCommon](#ResCommon) return [ReqReadMail](#ReqReadMail)
-* deleteMail([ResCommon](#ResCommon) return [ReqDeleteMail](#ReqDeleteMail)
-* takeAttachmentFromMail([ResCommon](#ResCommon) return [ReqTakeAttachment](#ReqTakeAttachment)
-* fetchAchievement([ResAchievement](#ResAchievement) return [ReqCommon](#ReqCommon)
-* buyShiLian([ResCommon](#ResCommon) return [ReqBuyShiLian](#ReqBuyShiLian)
-* matchShiLian([ResCommon](#ResCommon) return [ReqCommon](#ReqCommon)
-* goNextShiLian([ResCommon](#ResCommon) return [ReqCommon](#ReqCommon)
-* updateClientValue([ResCommon](#ResCommon) return [ReqUpdateClientValue](#ReqUpdateClientValue)
-* fetchClientValue([ResClientValue](#ResClientValue) return [ReqCommon](#ReqCommon)
-* clientMessage([ResCommon](#ResCommon) return [ReqClientMessage](#ReqClientMessage)
-* fetchCurrentMatchInfo([ResCurrentMatchInfo](#ResCurrentMatchInfo) return [ReqCurrentMatchInfo](#ReqCurrentMatchInfo)
-* userComplain([ResCommon](#ResCommon) return [ReqUserComplain](#ReqUserComplain)
-* fetchReviveCoinInfo([ResReviveCoinInfo](#ResReviveCoinInfo) return [ReqCommon](#ReqCommon)
-* gainReviveCoin([ResCommon](#ResCommon) return [ReqCommon](#ReqCommon)
-* fetchDailyTask([ResDailyTask](#ResDailyTask) return [ReqCommon](#ReqCommon)
-* refreshDailyTask([ResRefreshDailyTask](#ResRefreshDailyTask) return [ReqRefreshDailyTask](#ReqRefreshDailyTask)
-* useGiftCode([ResUseGiftCode](#ResUseGiftCode) return [ReqUseGiftCode](#ReqUseGiftCode)
-* fetchTitleList([ResTitleList](#ResTitleList) return [ReqCommon](#ReqCommon)
-* useTitle([ResCommon](#ResCommon) return [ReqUseTitle](#ReqUseTitle)
-* sendClientMessage([ResCommon](#ResCommon) return [ReqSendClientMessage](#ReqSendClientMessage)
-* fetchGameLiveInfo([ResGameLiveInfo](#ResGameLiveInfo) return [ReqGameLiveInfo](#ReqGameLiveInfo)
-* fetchGameLiveLeftSegment([ResGameLiveLeftSegment](#ResGameLiveLeftSegment) return [ReqGameLiveLeftSegment](#ReqGameLiveLeftSegment)
-* fetchGameLiveList([ResGameLiveList](#ResGameLiveList) return [ReqGameLiveList](#ReqGameLiveList)
-* fetchCommentSetting([ResCommentSetting](#ResCommentSetting) return [ReqCommon](#ReqCommon)
-* updateCommentSetting([ResCommon](#ResCommon) return [ReqUpdateCommentSetting](#ReqUpdateCommentSetting)
-* fetchCommentList([ResFetchCommentList](#ResFetchCommentList) return [ReqFetchCommentList](#ReqFetchCommentList)
-* fetchCommentContent([ResFetchCommentContent](#ResFetchCommentContent) return [ReqFetchCommentContent](#ReqFetchCommentContent)
-* leaveComment([ResCommon](#ResCommon) return [ReqLeaveComment](#ReqLeaveComment)
-* deleteComment([ResCommon](#ResCommon) return [ReqDeleteComment](#ReqDeleteComment)
-* updateReadComment([ResCommon](#ResCommon) return [ReqUpdateReadComment](#ReqUpdateReadComment)
-* fetchRollingNotice([ReqRollingNotice](#ReqRollingNotice) return [ReqCommon](#ReqCommon)
-* fetchServerTime([ResServerTime](#ResServerTime) return [ReqCommon](#ReqCommon)
-* fetchPlatformProducts([ResPlatformBillingProducts](#ResPlatformBillingProducts) return [ReqPlatformBillingProducts](#ReqPlatformBillingProducts)
-* cancelGooglePlayOrder([ResCommon](#ResCommon) return [ReqCancelGooglePlayOrder](#ReqCancelGooglePlayOrder)
-* openChest([ResOpenChest](#ResOpenChest) return [ReqOpenChest](#ReqOpenChest)
-* buyFromChestShop([ResBuyFromChestShop](#ResBuyFromChestShop) return [ReqBuyFromChestShop](#ReqBuyFromChestShop)
-* fetchDailySignInInfo([ResDailySignInInfo](#ResDailySignInInfo) return [ReqCommon](#ReqCommon)
-* doDailySignIn([ResCommon](#ResCommon) return [ReqCommon](#ReqCommon)
-* doActivitySignIn([ResDoActivitySignIn](#ResDoActivitySignIn) return [ReqDoActivitySignIn](#ReqDoActivitySignIn)
-* fetchCharacterInfo([ResCharacterInfo](#ResCharacterInfo) return [ReqCommon](#ReqCommon)
-* changeMainCharacter([ResCommon](#ResCommon) return [ReqChangeMainCharacter](#ReqChangeMainCharacter)
-* changeCharacterSkin([ResCommon](#ResCommon) return [ReqChangeCharacterSkin](#ReqChangeCharacterSkin)
-* changeCharacterView([ResCommon](#ResCommon) return [ReqChangeCharacterView](#ReqChangeCharacterView)
-* sendGiftToCharacter([ResSendGiftToCharacter](#ResSendGiftToCharacter) return [ReqSendGiftToCharacter](#ReqSendGiftToCharacter)
-* sellItem([ResCommon](#ResCommon) return [ReqSellItem](#ReqSellItem)
-* fetchCommonView([ResCommonView](#ResCommonView) return [ReqCommon](#ReqCommon)
-* changeCommonView([ResCommon](#ResCommon) return [ReqChangeCommonView](#ReqChangeCommonView)
-* saveCommonViews([ResCommon](#ResCommon) return [ReqSaveCommonViews](#ReqSaveCommonViews)
-* fetchCommonViews([ResCommonViews](#ResCommonViews) return [ReqCommonViews](#ReqCommonViews)
-* fetchAllCommonViews([ResAllcommonViews](#ResAllcommonViews) return [ReqCommon](#ReqCommon)
-* useCommonView([ResCommon](#ResCommon) return [ReqUseCommonView](#ReqUseCommonView)
-* upgradeCharacter([ResUpgradeCharacter](#ResUpgradeCharacter) return [ReqUpgradeCharacter](#ReqUpgradeCharacter)
-* addFinishedEnding([ResCommon](#ResCommon) return [ReqFinishedEnding](#ReqFinishedEnding)
-* receiveEndingReward([ResCommon](#ResCommon) return [ReqFinishedEnding](#ReqFinishedEnding)
-* gameMasterCommand([ResCommon](#ResCommon) return [ReqGMCommand](#ReqGMCommand)
-* fetchShopInfo([ResShopInfo](#ResShopInfo) return [ReqCommon](#ReqCommon)
-* buyFromShop([ResBuyFromShop](#ResBuyFromShop) return [ReqBuyFromShop](#ReqBuyFromShop)
-* buyFromZHP([ResCommon](#ResCommon) return [ReqBuyFromZHP](#ReqBuyFromZHP)
-* refreshZHPShop([ResRefreshZHPShop](#ResRefreshZHPShop) return [ReqReshZHPShop](#ReqReshZHPShop)
-* fetchMonthTicketInfo([ResMonthTicketInfo](#ResMonthTicketInfo) return [ReqCommon](#ReqCommon)
-* payMonthTicket([ResPayMonthTicket](#ResPayMonthTicket) return [ReqPayMonthTicket](#ReqPayMonthTicket)
-* exchangeCurrency([ResCommon](#ResCommon) return [ReqExchangeCurrency](#ReqExchangeCurrency)
-* exchangeChestStone([ResCommon](#ResCommon) return [ReqExchangeCurrency](#ReqExchangeCurrency)
-* exchangeDiamond([ResCommon](#ResCommon) return [ReqExchangeCurrency](#ReqExchangeCurrency)
-* fetchServerSettings([ResServerSettings](#ResServerSettings) return [ReqCommon](#ReqCommon)
-* fetchAccountSettings([ResAccountSettings](#ResAccountSettings) return [ReqCommon](#ReqCommon)
-* updateAccountSettings([ResCommon](#ResCommon) return [ReqUpdateAccountSettings](#ReqUpdateAccountSettings)
-* fetchModNicknameTime([ResModNicknameTime](#ResModNicknameTime) return [ReqCommon](#ReqCommon)
-* createWechatNativeOrder([ResCreateWechatNativeOrder](#ResCreateWechatNativeOrder) return [ReqCreateWechatNativeOrder](#ReqCreateWechatNativeOrder)
-* createWechatAppOrder([ResCreateWechatAppOrder](#ResCreateWechatAppOrder) return [ReqCreateWechatAppOrder](#ReqCreateWechatAppOrder)
-* createAlipayOrder([ResCreateAlipayOrder](#ResCreateAlipayOrder) return [ReqCreateAlipayOrder](#ReqCreateAlipayOrder)
-* createAlipayScanOrder([ResCreateAlipayScanOrder](#ResCreateAlipayScanOrder) return [ReqCreateAlipayScanOrder](#ReqCreateAlipayScanOrder)
-* createAlipayAppOrder([ResCreateAlipayAppOrder](#ResCreateAlipayAppOrder) return [ReqCreateAlipayAppOrder](#ReqCreateAlipayAppOrder)
-* createJPCreditCardOrder([ResCreateJPCreditCardOrder](#ResCreateJPCreditCardOrder) return [ReqCreateJPCreditCardOrder](#ReqCreateJPCreditCardOrder)
-* createJPPaypalOrder([ResCreateJPPaypalOrder](#ResCreateJPPaypalOrder) return [ReqCreateJPPaypalOrder](#ReqCreateJPPaypalOrder)
-* createJPAuOrder([ResCreateJPAuOrder](#ResCreateJPAuOrder) return [ReqCreateJPAuOrder](#ReqCreateJPAuOrder)
-* createJPDocomoOrder([ResCreateJPDocomoOrder](#ResCreateJPDocomoOrder) return [ReqCreateJPDocomoOrder](#ReqCreateJPDocomoOrder)
-* createJPWebMoneyOrder([ResCreateJPWebMoneyOrder](#ResCreateJPWebMoneyOrder) return [ReqCreateJPWebMoneyOrder](#ReqCreateJPWebMoneyOrder)
-* createJPSoftbankOrder([ResCreateJPSoftbankOrder](#ResCreateJPSoftbankOrder) return [ReqCreateJPSoftbankOrder](#ReqCreateJPSoftbankOrder)
-* createENPaypalOrder([ResCreateENPaypalOrder](#ResCreateENPaypalOrder) return [ReqCreateENPaypalOrder](#ReqCreateENPaypalOrder)
-* createENMasterCardOrder([ResCreateENMasterCardOrder](#ResCreateENMasterCardOrder) return [ReqCreateENMasterCardOrder](#ReqCreateENMasterCardOrder)
-* createENVisaOrder([ResCreateENVisaOrder](#ResCreateENVisaOrder) return [ReqCreateENVisaOrder](#ReqCreateENVisaOrder)
-* createENJCBOrder([ResCreateENJCBOrder](#ResCreateENJCBOrder) return [ReqCreateENJCBOrder](#ReqCreateENJCBOrder)
-* createENAlipayOrder([ResCreateENAlipayOrder](#ResCreateENAlipayOrder) return [ReqCreateENAlipayOrder](#ReqCreateENAlipayOrder)
-* createDMMOrder([ResCreateDmmOrder](#ResCreateDmmOrder) return [ReqCreateDMMOrder](#ReqCreateDMMOrder)
-* createIAPOrder([ResCreateIAPOrder](#ResCreateIAPOrder) return [ReqCreateIAPOrder](#ReqCreateIAPOrder)
-* createMyCardAndroidOrder([ResCreateMyCardOrder](#ResCreateMyCardOrder) return [ReqCreateMyCardOrder](#ReqCreateMyCardOrder)
-* createMyCardWebOrder([ResCreateMyCardOrder](#ResCreateMyCardOrder) return [ReqCreateMyCardOrder](#ReqCreateMyCardOrder)
-* verifyMyCardOrder([ResCommon](#ResCommon) return [ReqVerifyMyCardOrder](#ReqVerifyMyCardOrder)
-* verificationIAPOrder([ResVerificationIAPOrder](#ResVerificationIAPOrder) return [ReqVerificationIAPOrder](#ReqVerificationIAPOrder)
-* createYostarSDKOrder([ResCreateYostarOrder](#ResCreateYostarOrder) return [ReqCreateYostarOrder](#ReqCreateYostarOrder)
-* createBillingOrder([ResCreateBillingOrder](#ResCreateBillingOrder) return [ReqCreateBillingOrder](#ReqCreateBillingOrder)
-* solveGooglePlayOrder([ResCommon](#ResCommon) return [ReqSolveGooglePlayOrder](#ReqSolveGooglePlayOrder)
-* solveGooglePayOrderV3([ResCommon](#ResCommon) return [ReqSolveGooglePlayOrderV3](#ReqSolveGooglePlayOrderV3)
-* fetchMisc([ResMisc](#ResMisc) return [ReqCommon](#ReqCommon)
-* modifySignature([ResCommon](#ResCommon) return [ReqModifySignature](#ReqModifySignature)
-* fetchIDCardInfo([ResIDCardInfo](#ResIDCardInfo) return [ReqCommon](#ReqCommon)
-* updateIDCardInfo([ResCommon](#ResCommon) return [ReqUpdateIDCardInfo](#ReqUpdateIDCardInfo)
-* fetchVipReward([ResVipReward](#ResVipReward) return [ReqCommon](#ReqCommon)
-* gainVipReward([ResCommon](#ResCommon) return [ReqGainVipReward](#ReqGainVipReward)
-* fetchCustomizedContestList([ResFetchCustomizedContestList](#ResFetchCustomizedContestList) return [ReqFetchCustomizedContestList](#ReqFetchCustomizedContestList)
-* fetchCustomizedContestExtendInfo([ResFetchCustomizedContestExtendInfo](#ResFetchCustomizedContestExtendInfo) return [ReqFetchCustomizedContestExtendInfo](#ReqFetchCustomizedContestExtendInfo)
-* fetchCustomizedContestAuthInfo([ResFetchCustomizedContestAuthInfo](#ResFetchCustomizedContestAuthInfo) return [ReqFetchCustomizedContestAuthInfo](#ReqFetchCustomizedContestAuthInfo)
-* enterCustomizedContest([ResEnterCustomizedContest](#ResEnterCustomizedContest) return [ReqEnterCustomizedContest](#ReqEnterCustomizedContest)
-* leaveCustomizedContest([ResCommon](#ResCommon) return [ReqCommon](#ReqCommon)
-* fetchCustomizedContestOnlineInfo([ResFetchCustomizedContestOnlineInfo](#ResFetchCustomizedContestOnlineInfo) return [ReqFetchCustomizedContestOnlineInfo](#ReqFetchCustomizedContestOnlineInfo)
-* fetchCustomizedContestByContestId([ResFetchCustomizedContestByContestId](#ResFetchCustomizedContestByContestId) return [ReqFetchCustomizedContestByContestId](#ReqFetchCustomizedContestByContestId)
-* startCustomizedContest([ResCommon](#ResCommon) return [ReqStartCustomizedContest](#ReqStartCustomizedContest)
-* stopCustomizedContest([ResCommon](#ResCommon) return [ReqCommon](#ReqCommon)
-* joinCustomizedContestChatRoom([ResJoinCustomizedContestChatRoom](#ResJoinCustomizedContestChatRoom) return [ReqJoinCustomizedContestChatRoom](#ReqJoinCustomizedContestChatRoom)
-* leaveCustomizedContestChatRoom([ResCommon](#ResCommon) return [ReqCommon](#ReqCommon)
-* sayChatMessage([ResCommon](#ResCommon) return [ReqSayChatMessage](#ReqSayChatMessage)
-* fetchCustomizedContestGameRecords([ResFetchCustomizedContestGameRecords](#ResFetchCustomizedContestGameRecords) return [ReqFetchCustomizedContestGameRecords](#ReqFetchCustomizedContestGameRecords)
-* fetchCustomizedContestGameLiveList([ResFetchCustomizedContestGameLiveList](#ResFetchCustomizedContestGameLiveList) return [ReqFetchCustomizedContestGameLiveList](#ReqFetchCustomizedContestGameLiveList)
-* followCustomizedContest([ResCommon](#ResCommon) return [ReqTargetCustomizedContest](#ReqTargetCustomizedContest)
-* unfollowCustomizedContest([ResCommon](#ResCommon) return [ReqTargetCustomizedContest](#ReqTargetCustomizedContest)
-* fetchActivityList([ResActivityList](#ResActivityList) return [ReqCommon](#ReqCommon)
-* fetchAccountActivityData([ResAccountActivityData](#ResAccountActivityData) return [ReqCommon](#ReqCommon)
-* exchangeActivityItem([ResExchangeActivityItem](#ResExchangeActivityItem) return [ReqExchangeActivityItem](#ReqExchangeActivityItem)
-* completeActivityTask([ResCommon](#ResCommon) return [ReqCompleteActivityTask](#ReqCompleteActivityTask)
-* completeActivityFlipTask([ResCommon](#ResCommon) return [ReqCompleteActivityTask](#ReqCompleteActivityTask)
-* completePeriodActivityTask([ResCommon](#ResCommon) return [ReqCompleteActivityTask](#ReqCompleteActivityTask)
-* completeRandomActivityTask([ResCommon](#ResCommon) return [ReqCompleteActivityTask](#ReqCompleteActivityTask)
-* receiveActivityFlipTask([ResReceiveActivityFlipTask](#ResReceiveActivityFlipTask) return [ReqReceiveActivityFlipTask](#ReqReceiveActivityFlipTask)
-* fetchActivityFlipInfo([ResFetchActivityFlipInfo](#ResFetchActivityFlipInfo) return [ReqFetchActivityFlipInfo](#ReqFetchActivityFlipInfo)
-* gainAccumulatedPointActivityReward([ResCommon](#ResCommon) return [ReqGainAccumulatedPointActivityReward](#ReqGainAccumulatedPointActivityReward)
-* fetchRankPointLeaderboard([ResFetchRankPointLeaderboard](#ResFetchRankPointLeaderboard) return [ReqFetchRankPointLeaderboard](#ReqFetchRankPointLeaderboard)
-* gainRankPointReward([ResCommon](#ResCommon) return [ReqGainRankPointReward](#ReqGainRankPointReward)
-* richmanActivityNextMove([ResRichmanNextMove](#ResRichmanNextMove) return [ReqRichmanNextMove](#ReqRichmanNextMove)
-* richmanAcitivitySpecialMove([ResRichmanNextMove](#ResRichmanNextMove) return [ReqRichmanSpecialMove](#ReqRichmanSpecialMove)
-* richmanActivityChestInfo([ResRichmanChestInfo](#ResRichmanChestInfo) return [ReqRichmanChestInfo](#ReqRichmanChestInfo)
-* createGameObserveAuth([ResCreateGameObserveAuth](#ResCreateGameObserveAuth) return [ReqCreateGameObserveAuth](#ReqCreateGameObserveAuth)
-* refreshGameObserveAuth([ResRefreshGameObserveAuth](#ResRefreshGameObserveAuth) return [ReqRefreshGameObserveAuth](#ReqRefreshGameObserveAuth)
+* fetchConnectionInfo([ResConnectionInfo](#resconnectioninfo) return [ReqCommon](#reqcommon)
+* signup([ResSignupAccount](#ressignupaccount) return [ReqSignupAccount](#reqsignupaccount)
+* login([ResLogin](#reslogin) return [ReqLogin](#reqlogin)
+* emailLogin([ResLogin](#reslogin) return [ReqEmailLogin](#reqemaillogin)
+* oauth2Auth([ResOauth2Auth](#resoauth2auth) return [ReqOauth2Auth](#reqoauth2auth)
+* oauth2Check([ResOauth2Check](#resoauth2check) return [ReqOauth2Check](#reqoauth2check)
+* oauth2Signup([ResOauth2Signup](#resoauth2signup) return [ReqOauth2Signup](#reqoauth2signup)
+* oauth2Login([ResLogin](#reslogin) return [ReqOauth2Login](#reqoauth2login)
+* dmmPreLogin([ResDMMPreLogin](#resdmmprelogin) return [ReqDMMPreLogin](#reqdmmprelogin)
+* createPhoneVerifyCode([ResCommon](#rescommon) return [ReqCreatePhoneVerifyCode](#reqcreatephoneverifycode)
+* createEmailVerifyCode([ResCommon](#rescommon) return [ReqCreateEmailVerifyCode](#reqcreateemailverifycode)
+* verfifyCodeForSecure([ResVerfiyCodeForSecure](#resverfiycodeforsecure) return [ReqVerifyCodeForSecure](#reqverifycodeforsecure)
+* bindPhoneNumber([ResCommon](#rescommon) return [ReqBindPhoneNumber](#reqbindphonenumber)
+* unbindPhoneNumber([ResCommon](#rescommon) return [ReqUnbindPhoneNumber](#requnbindphonenumber)
+* fetchPhoneLoginBind([ResFetchPhoneLoginBind](#resfetchphoneloginbind) return [ReqCommon](#reqcommon)
+* createPhoneLoginBind([ResCommon](#rescommon) return [ReqCreatePhoneLoginBind](#reqcreatephoneloginbind)
+* bindEmail([ResCommon](#rescommon) return [ReqBindEmail](#reqbindemail)
+* modifyPassword([ResCommon](#rescommon) return [ReqModifyPassword](#reqmodifypassword)
+* bindAccount([ResCommon](#rescommon) return [ReqBindAccount](#reqbindaccount)
+* logout([ResLogout](#reslogout) return [ReqLogout](#reqlogout)
+* heatbeat([ResCommon](#rescommon) return [ReqHeatBeat](#reqheatbeat)
+* loginBeat([ResCommon](#rescommon) return [ReqLoginBeat](#reqloginbeat)
+* createNickname([ResCommon](#rescommon) return [ReqCreateNickname](#reqcreatenickname)
+* modifyNickname([ResCommon](#rescommon) return [ReqModifyNickname](#reqmodifynickname)
+* modifyBirthday([ResCommon](#rescommon) return [ReqModifyBirthday](#reqmodifybirthday)
+* fetchRoom([ResSelfRoom](#resselfroom) return [ReqCommon](#reqcommon)
+* createRoom([ResCreateRoom](#rescreateroom) return [ReqCreateRoom](#reqcreateroom)
+* joinRoom([ResJoinRoom](#resjoinroom) return [ReqJoinRoom](#reqjoinroom)
+* leaveRoom([ResCommon](#rescommon) return [ReqCommon](#reqcommon)
+* readyPlay([ResCommon](#rescommon) return [ReqRoomReady](#reqroomready)
+* dressingStatus([ResCommon](#rescommon) return [ReqRoomDressing](#reqroomdressing)
+* startRoom([ResCommon](#rescommon) return [ReqRoomStart](#reqroomstart)
+* kickPlayer([ResCommon](#rescommon) return [ReqRoomKick](#reqroomkick)
+* modifyRoom([ResCommon](#rescommon) return [ReqModifyRoom](#reqmodifyroom)
+* matchGame([ResCommon](#rescommon) return [ReqJoinMatchQueue](#reqjoinmatchqueue)
+* cancelMatch([ResCommon](#rescommon) return [ReqCancelMatchQueue](#reqcancelmatchqueue)
+* fetchAccountInfo([ResAccountInfo](#resaccountinfo) return [ReqAccountInfo](#reqaccountinfo)
+* changeAvatar([ResCommon](#rescommon) return [ReqChangeAvatar](#reqchangeavatar)
+* fetchAccountStatisticInfo([ResAccountStatisticInfo](#resaccountstatisticinfo) return [ReqAccountStatisticInfo](#reqaccountstatisticinfo)
+* fetchAccountCharacterInfo([ResAccountCharacterInfo](#resaccountcharacterinfo) return [ReqCommon](#reqcommon)
+* shopPurchase([ResShopPurchase](#resshoppurchase) return [ReqShopPurchase](#reqshoppurchase)
+* fetchGameRecord([ResGameRecord](#resgamerecord) return [ReqGameRecord](#reqgamerecord)
+* fetchGameRecordList([ResGameRecordList](#resgamerecordlist) return [ReqGameRecordList](#reqgamerecordlist)
+* fetchCollectedGameRecordList([ResCollectedGameRecordList](#rescollectedgamerecordlist) return [ReqCommon](#reqcommon)
+* fetchGameRecordsDetail([ResGameRecordsDetail](#resgamerecordsdetail) return [ReqGameRecordsDetail](#reqgamerecordsdetail)
+* addCollectedGameRecord([ResAddCollectedGameRecord](#resaddcollectedgamerecord) return [ReqAddCollectedGameRecord](#reqaddcollectedgamerecord)
+* removeCollectedGameRecord([ResRemoveCollectedGameRecord](#resremovecollectedgamerecord) return [ReqRemoveCollectedGameRecord](#reqremovecollectedgamerecord)
+* changeCollectedGameRecordRemarks([ResChangeCollectedGameRecordRemarks](#reschangecollectedgamerecordremarks) return [ReqChangeCollectedGameRecordRemarks](#reqchangecollectedgamerecordremarks)
+* fetchLevelLeaderboard([ResLevelLeaderboard](#reslevelleaderboard) return [ReqLevelLeaderboard](#reqlevelleaderboard)
+* fetchMultiAccountBrief([ResMultiAccountBrief](#resmultiaccountbrief) return [ReqMultiAccountId](#reqmultiaccountid)
+* fetchFriendList([ResFriendList](#resfriendlist) return [ReqCommon](#reqcommon)
+* fetchFriendApplyList([ResFriendApplyList](#resfriendapplylist) return [ReqCommon](#reqcommon)
+* applyFriend([ResCommon](#rescommon) return [ReqApplyFriend](#reqapplyfriend)
+* handleFriendApply([ResCommon](#rescommon) return [ReqHandleFriendApply](#reqhandlefriendapply)
+* removeFriend([ResCommon](#rescommon) return [ReqRemoveFriend](#reqremovefriend)
+* searchAccountById([ResSearchAccountById](#ressearchaccountbyid) return [ReqSearchAccountById](#reqsearchaccountbyid)
+* searchAccountByPattern([ResSearchAccountByPattern](#ressearchaccountbypattern) return [ReqSearchAccountByPattern](#reqsearchaccountbypattern)
+* fetchAccountState([ResAccountStates](#resaccountstates) return [ReqAccountList](#reqaccountlist)
+* fetchBagInfo([ResBagInfo](#resbaginfo) return [ReqCommon](#reqcommon)
+* useBagItem([ResCommon](#rescommon) return [ReqUseBagItem](#requsebagitem)
+* openManualItem([ResCommon](#rescommon) return [ReqOpenManualItem](#reqopenmanualitem)
+* openRandomRewardItem([ResOpenRandomRewardItem](#resopenrandomrewarditem) return [ReqOpenRandomRewardItem](#reqopenrandomrewarditem)
+* composeShard([ResCommon](#rescommon) return [ReqComposeShard](#reqcomposeshard)
+* fetchAnnouncement([ResAnnouncement](#resannouncement) return [ReqCommon](#reqcommon)
+* readAnnouncement([ResCommon](#rescommon) return [ReqReadAnnouncement](#reqreadannouncement)
+* fetchMailInfo([ResMailInfo](#resmailinfo) return [ReqCommon](#reqcommon)
+* readMail([ResCommon](#rescommon) return [ReqReadMail](#reqreadmail)
+* deleteMail([ResCommon](#rescommon) return [ReqDeleteMail](#reqdeletemail)
+* takeAttachmentFromMail([ResCommon](#rescommon) return [ReqTakeAttachment](#reqtakeattachment)
+* fetchAchievement([ResAchievement](#resachievement) return [ReqCommon](#reqcommon)
+* buyShiLian([ResCommon](#rescommon) return [ReqBuyShiLian](#reqbuyshilian)
+* matchShiLian([ResCommon](#rescommon) return [ReqCommon](#reqcommon)
+* goNextShiLian([ResCommon](#rescommon) return [ReqCommon](#reqcommon)
+* updateClientValue([ResCommon](#rescommon) return [ReqUpdateClientValue](#requpdateclientvalue)
+* fetchClientValue([ResClientValue](#resclientvalue) return [ReqCommon](#reqcommon)
+* clientMessage([ResCommon](#rescommon) return [ReqClientMessage](#reqclientmessage)
+* fetchCurrentMatchInfo([ResCurrentMatchInfo](#rescurrentmatchinfo) return [ReqCurrentMatchInfo](#reqcurrentmatchinfo)
+* userComplain([ResCommon](#rescommon) return [ReqUserComplain](#requsercomplain)
+* fetchReviveCoinInfo([ResReviveCoinInfo](#resrevivecoininfo) return [ReqCommon](#reqcommon)
+* gainReviveCoin([ResCommon](#rescommon) return [ReqCommon](#reqcommon)
+* fetchDailyTask([ResDailyTask](#resdailytask) return [ReqCommon](#reqcommon)
+* refreshDailyTask([ResRefreshDailyTask](#resrefreshdailytask) return [ReqRefreshDailyTask](#reqrefreshdailytask)
+* useGiftCode([ResUseGiftCode](#resusegiftcode) return [ReqUseGiftCode](#requsegiftcode)
+* fetchTitleList([ResTitleList](#restitlelist) return [ReqCommon](#reqcommon)
+* useTitle([ResCommon](#rescommon) return [ReqUseTitle](#requsetitle)
+* sendClientMessage([ResCommon](#rescommon) return [ReqSendClientMessage](#reqsendclientmessage)
+* fetchGameLiveInfo([ResGameLiveInfo](#resgameliveinfo) return [ReqGameLiveInfo](#reqgameliveinfo)
+* fetchGameLiveLeftSegment([ResGameLiveLeftSegment](#resgameliveleftsegment) return [ReqGameLiveLeftSegment](#reqgameliveleftsegment)
+* fetchGameLiveList([ResGameLiveList](#resgamelivelist) return [ReqGameLiveList](#reqgamelivelist)
+* fetchCommentSetting([ResCommentSetting](#rescommentsetting) return [ReqCommon](#reqcommon)
+* updateCommentSetting([ResCommon](#rescommon) return [ReqUpdateCommentSetting](#requpdatecommentsetting)
+* fetchCommentList([ResFetchCommentList](#resfetchcommentlist) return [ReqFetchCommentList](#reqfetchcommentlist)
+* fetchCommentContent([ResFetchCommentContent](#resfetchcommentcontent) return [ReqFetchCommentContent](#reqfetchcommentcontent)
+* leaveComment([ResCommon](#rescommon) return [ReqLeaveComment](#reqleavecomment)
+* deleteComment([ResCommon](#rescommon) return [ReqDeleteComment](#reqdeletecomment)
+* updateReadComment([ResCommon](#rescommon) return [ReqUpdateReadComment](#requpdatereadcomment)
+* fetchRollingNotice([ReqRollingNotice](#reqrollingnotice) return [ReqCommon](#reqcommon)
+* fetchServerTime([ResServerTime](#resservertime) return [ReqCommon](#reqcommon)
+* fetchPlatformProducts([ResPlatformBillingProducts](#resplatformbillingproducts) return [ReqPlatformBillingProducts](#reqplatformbillingproducts)
+* cancelGooglePlayOrder([ResCommon](#rescommon) return [ReqCancelGooglePlayOrder](#reqcancelgoogleplayorder)
+* openChest([ResOpenChest](#resopenchest) return [ReqOpenChest](#reqopenchest)
+* buyFromChestShop([ResBuyFromChestShop](#resbuyfromchestshop) return [ReqBuyFromChestShop](#reqbuyfromchestshop)
+* fetchDailySignInInfo([ResDailySignInInfo](#resdailysignininfo) return [ReqCommon](#reqcommon)
+* doDailySignIn([ResCommon](#rescommon) return [ReqCommon](#reqcommon)
+* doActivitySignIn([ResDoActivitySignIn](#resdoactivitysignin) return [ReqDoActivitySignIn](#reqdoactivitysignin)
+* fetchCharacterInfo([ResCharacterInfo](#rescharacterinfo) return [ReqCommon](#reqcommon)
+* changeMainCharacter([ResCommon](#rescommon) return [ReqChangeMainCharacter](#reqchangemaincharacter)
+* changeCharacterSkin([ResCommon](#rescommon) return [ReqChangeCharacterSkin](#reqchangecharacterskin)
+* changeCharacterView([ResCommon](#rescommon) return [ReqChangeCharacterView](#reqchangecharacterview)
+* sendGiftToCharacter([ResSendGiftToCharacter](#ressendgifttocharacter) return [ReqSendGiftToCharacter](#reqsendgifttocharacter)
+* sellItem([ResCommon](#rescommon) return [ReqSellItem](#reqsellitem)
+* fetchCommonView([ResCommonView](#rescommonview) return [ReqCommon](#reqcommon)
+* changeCommonView([ResCommon](#rescommon) return [ReqChangeCommonView](#reqchangecommonview)
+* saveCommonViews([ResCommon](#rescommon) return [ReqSaveCommonViews](#reqsavecommonviews)
+* fetchCommonViews([ResCommonViews](#rescommonviews) return [ReqCommonViews](#reqcommonviews)
+* fetchAllCommonViews([ResAllcommonViews](#resallcommonviews) return [ReqCommon](#reqcommon)
+* useCommonView([ResCommon](#rescommon) return [ReqUseCommonView](#requsecommonview)
+* upgradeCharacter([ResUpgradeCharacter](#resupgradecharacter) return [ReqUpgradeCharacter](#requpgradecharacter)
+* addFinishedEnding([ResCommon](#rescommon) return [ReqFinishedEnding](#reqfinishedending)
+* receiveEndingReward([ResCommon](#rescommon) return [ReqFinishedEnding](#reqfinishedending)
+* gameMasterCommand([ResCommon](#rescommon) return [ReqGMCommand](#reqgmcommand)
+* fetchShopInfo([ResShopInfo](#resshopinfo) return [ReqCommon](#reqcommon)
+* buyFromShop([ResBuyFromShop](#resbuyfromshop) return [ReqBuyFromShop](#reqbuyfromshop)
+* buyFromZHP([ResCommon](#rescommon) return [ReqBuyFromZHP](#reqbuyfromzhp)
+* refreshZHPShop([ResRefreshZHPShop](#resrefreshzhpshop) return [ReqReshZHPShop](#reqreshzhpshop)
+* fetchMonthTicketInfo([ResMonthTicketInfo](#resmonthticketinfo) return [ReqCommon](#reqcommon)
+* payMonthTicket([ResPayMonthTicket](#respaymonthticket) return [ReqPayMonthTicket](#reqpaymonthticket)
+* exchangeCurrency([ResCommon](#rescommon) return [ReqExchangeCurrency](#reqexchangecurrency)
+* exchangeChestStone([ResCommon](#rescommon) return [ReqExchangeCurrency](#reqexchangecurrency)
+* exchangeDiamond([ResCommon](#rescommon) return [ReqExchangeCurrency](#reqexchangecurrency)
+* fetchServerSettings([ResServerSettings](#resserversettings) return [ReqCommon](#reqcommon)
+* fetchAccountSettings([ResAccountSettings](#resaccountsettings) return [ReqCommon](#reqcommon)
+* updateAccountSettings([ResCommon](#rescommon) return [ReqUpdateAccountSettings](#requpdateaccountsettings)
+* fetchModNicknameTime([ResModNicknameTime](#resmodnicknametime) return [ReqCommon](#reqcommon)
+* createWechatNativeOrder([ResCreateWechatNativeOrder](#rescreatewechatnativeorder) return [ReqCreateWechatNativeOrder](#reqcreatewechatnativeorder)
+* createWechatAppOrder([ResCreateWechatAppOrder](#rescreatewechatapporder) return [ReqCreateWechatAppOrder](#reqcreatewechatapporder)
+* createAlipayOrder([ResCreateAlipayOrder](#rescreatealipayorder) return [ReqCreateAlipayOrder](#reqcreatealipayorder)
+* createAlipayScanOrder([ResCreateAlipayScanOrder](#rescreatealipayscanorder) return [ReqCreateAlipayScanOrder](#reqcreatealipayscanorder)
+* createAlipayAppOrder([ResCreateAlipayAppOrder](#rescreatealipayapporder) return [ReqCreateAlipayAppOrder](#reqcreatealipayapporder)
+* createJPCreditCardOrder([ResCreateJPCreditCardOrder](#rescreatejpcreditcardorder) return [ReqCreateJPCreditCardOrder](#reqcreatejpcreditcardorder)
+* createJPPaypalOrder([ResCreateJPPaypalOrder](#rescreatejppaypalorder) return [ReqCreateJPPaypalOrder](#reqcreatejppaypalorder)
+* createJPAuOrder([ResCreateJPAuOrder](#rescreatejpauorder) return [ReqCreateJPAuOrder](#reqcreatejpauorder)
+* createJPDocomoOrder([ResCreateJPDocomoOrder](#rescreatejpdocomoorder) return [ReqCreateJPDocomoOrder](#reqcreatejpdocomoorder)
+* createJPWebMoneyOrder([ResCreateJPWebMoneyOrder](#rescreatejpwebmoneyorder) return [ReqCreateJPWebMoneyOrder](#reqcreatejpwebmoneyorder)
+* createJPSoftbankOrder([ResCreateJPSoftbankOrder](#rescreatejpsoftbankorder) return [ReqCreateJPSoftbankOrder](#reqcreatejpsoftbankorder)
+* createENPaypalOrder([ResCreateENPaypalOrder](#rescreateenpaypalorder) return [ReqCreateENPaypalOrder](#reqcreateenpaypalorder)
+* createENMasterCardOrder([ResCreateENMasterCardOrder](#rescreateenmastercardorder) return [ReqCreateENMasterCardOrder](#reqcreateenmastercardorder)
+* createENVisaOrder([ResCreateENVisaOrder](#rescreateenvisaorder) return [ReqCreateENVisaOrder](#reqcreateenvisaorder)
+* createENJCBOrder([ResCreateENJCBOrder](#rescreateenjcborder) return [ReqCreateENJCBOrder](#reqcreateenjcborder)
+* createENAlipayOrder([ResCreateENAlipayOrder](#rescreateenalipayorder) return [ReqCreateENAlipayOrder](#reqcreateenalipayorder)
+* createDMMOrder([ResCreateDmmOrder](#rescreatedmmorder) return [ReqCreateDMMOrder](#reqcreatedmmorder)
+* createIAPOrder([ResCreateIAPOrder](#rescreateiaporder) return [ReqCreateIAPOrder](#reqcreateiaporder)
+* createMyCardAndroidOrder([ResCreateMyCardOrder](#rescreatemycardorder) return [ReqCreateMyCardOrder](#reqcreatemycardorder)
+* createMyCardWebOrder([ResCreateMyCardOrder](#rescreatemycardorder) return [ReqCreateMyCardOrder](#reqcreatemycardorder)
+* verifyMyCardOrder([ResCommon](#rescommon) return [ReqVerifyMyCardOrder](#reqverifymycardorder)
+* verificationIAPOrder([ResVerificationIAPOrder](#resverificationiaporder) return [ReqVerificationIAPOrder](#reqverificationiaporder)
+* createYostarSDKOrder([ResCreateYostarOrder](#rescreateyostarorder) return [ReqCreateYostarOrder](#reqcreateyostarorder)
+* createBillingOrder([ResCreateBillingOrder](#rescreatebillingorder) return [ReqCreateBillingOrder](#reqcreatebillingorder)
+* solveGooglePlayOrder([ResCommon](#rescommon) return [ReqSolveGooglePlayOrder](#reqsolvegoogleplayorder)
+* solveGooglePayOrderV3([ResCommon](#rescommon) return [ReqSolveGooglePlayOrderV3](#reqsolvegoogleplayorderv3)
+* fetchMisc([ResMisc](#resmisc) return [ReqCommon](#reqcommon)
+* modifySignature([ResCommon](#rescommon) return [ReqModifySignature](#reqmodifysignature)
+* fetchIDCardInfo([ResIDCardInfo](#residcardinfo) return [ReqCommon](#reqcommon)
+* updateIDCardInfo([ResCommon](#rescommon) return [ReqUpdateIDCardInfo](#requpdateidcardinfo)
+* fetchVipReward([ResVipReward](#resvipreward) return [ReqCommon](#reqcommon)
+* gainVipReward([ResCommon](#rescommon) return [ReqGainVipReward](#reqgainvipreward)
+* fetchCustomizedContestList([ResFetchCustomizedContestList](#resfetchcustomizedcontestlist) return [ReqFetchCustomizedContestList](#reqfetchcustomizedcontestlist)
+* fetchCustomizedContestExtendInfo([ResFetchCustomizedContestExtendInfo](#resfetchcustomizedcontestextendinfo) return [ReqFetchCustomizedContestExtendInfo](#reqfetchcustomizedcontestextendinfo)
+* fetchCustomizedContestAuthInfo([ResFetchCustomizedContestAuthInfo](#resfetchcustomizedcontestauthinfo) return [ReqFetchCustomizedContestAuthInfo](#reqfetchcustomizedcontestauthinfo)
+* enterCustomizedContest([ResEnterCustomizedContest](#resentercustomizedcontest) return [ReqEnterCustomizedContest](#reqentercustomizedcontest)
+* leaveCustomizedContest([ResCommon](#rescommon) return [ReqCommon](#reqcommon)
+* fetchCustomizedContestOnlineInfo([ResFetchCustomizedContestOnlineInfo](#resfetchcustomizedcontestonlineinfo) return [ReqFetchCustomizedContestOnlineInfo](#reqfetchcustomizedcontestonlineinfo)
+* fetchCustomizedContestByContestId([ResFetchCustomizedContestByContestId](#resfetchcustomizedcontestbycontestid) return [ReqFetchCustomizedContestByContestId](#reqfetchcustomizedcontestbycontestid)
+* startCustomizedContest([ResCommon](#rescommon) return [ReqStartCustomizedContest](#reqstartcustomizedcontest)
+* stopCustomizedContest([ResCommon](#rescommon) return [ReqCommon](#reqcommon)
+* joinCustomizedContestChatRoom([ResJoinCustomizedContestChatRoom](#resjoincustomizedcontestchatroom) return [ReqJoinCustomizedContestChatRoom](#reqjoincustomizedcontestchatroom)
+* leaveCustomizedContestChatRoom([ResCommon](#rescommon) return [ReqCommon](#reqcommon)
+* sayChatMessage([ResCommon](#rescommon) return [ReqSayChatMessage](#reqsaychatmessage)
+* fetchCustomizedContestGameRecords([ResFetchCustomizedContestGameRecords](#resfetchcustomizedcontestgamerecords) return [ReqFetchCustomizedContestGameRecords](#reqfetchcustomizedcontestgamerecords)
+* fetchCustomizedContestGameLiveList([ResFetchCustomizedContestGameLiveList](#resfetchcustomizedcontestgamelivelist) return [ReqFetchCustomizedContestGameLiveList](#reqfetchcustomizedcontestgamelivelist)
+* followCustomizedContest([ResCommon](#rescommon) return [ReqTargetCustomizedContest](#reqtargetcustomizedcontest)
+* unfollowCustomizedContest([ResCommon](#rescommon) return [ReqTargetCustomizedContest](#reqtargetcustomizedcontest)
+* fetchActivityList([ResActivityList](#resactivitylist) return [ReqCommon](#reqcommon)
+* fetchAccountActivityData([ResAccountActivityData](#resaccountactivitydata) return [ReqCommon](#reqcommon)
+* exchangeActivityItem([ResExchangeActivityItem](#resexchangeactivityitem) return [ReqExchangeActivityItem](#reqexchangeactivityitem)
+* completeActivityTask([ResCommon](#rescommon) return [ReqCompleteActivityTask](#reqcompleteactivitytask)
+* completeActivityFlipTask([ResCommon](#rescommon) return [ReqCompleteActivityTask](#reqcompleteactivitytask)
+* completePeriodActivityTask([ResCommon](#rescommon) return [ReqCompleteActivityTask](#reqcompleteactivitytask)
+* completeRandomActivityTask([ResCommon](#rescommon) return [ReqCompleteActivityTask](#reqcompleteactivitytask)
+* receiveActivityFlipTask([ResReceiveActivityFlipTask](#resreceiveactivityfliptask) return [ReqReceiveActivityFlipTask](#reqreceiveactivityfliptask)
+* fetchActivityFlipInfo([ResFetchActivityFlipInfo](#resfetchactivityflipinfo) return [ReqFetchActivityFlipInfo](#reqfetchactivityflipinfo)
+* gainAccumulatedPointActivityReward([ResCommon](#rescommon) return [ReqGainAccumulatedPointActivityReward](#reqgainaccumulatedpointactivityreward)
+* fetchRankPointLeaderboard([ResFetchRankPointLeaderboard](#resfetchrankpointleaderboard) return [ReqFetchRankPointLeaderboard](#reqfetchrankpointleaderboard)
+* gainRankPointReward([ResCommon](#rescommon) return [ReqGainRankPointReward](#reqgainrankpointreward)
+* richmanActivityNextMove([ResRichmanNextMove](#resrichmannextmove) return [ReqRichmanNextMove](#reqrichmannextmove)
+* richmanAcitivitySpecialMove([ResRichmanNextMove](#resrichmannextmove) return [ReqRichmanSpecialMove](#reqrichmanspecialmove)
+* richmanActivityChestInfo([ResRichmanChestInfo](#resrichmanchestinfo) return [ReqRichmanChestInfo](#reqrichmanchestinfo)
+* createGameObserveAuth([ResCreateGameObserveAuth](#rescreategameobserveauth) return [ReqCreateGameObserveAuth](#reqcreategameobserveauth)
+* refreshGameObserveAuth([ResRefreshGameObserveAuth](#resrefreshgameobserveauth) return [ReqRefreshGameObserveAuth](#reqrefreshgameobserveauth)
 ## ResConnectionInfo
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | client_endpoint | [NetworkEndpoint](#NetworkEndpoint) |
+| 1 | error | [Error](#error) |
+| 2 | client_endpoint | [NetworkEndpoint](#networkendpoint) |
 
 ## ReqSignupAccount
 
@@ -1420,7 +1420,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 
 ## ReqLogin
 
@@ -1429,7 +1429,7 @@ No fields
 | 1 | account | string |
 | 2 | password | string |
 | 3 | reconnect | bool |
-| 4 | device | [ClientDeviceInfo](#ClientDeviceInfo) |
+| 4 | device | [ClientDeviceInfo](#clientdeviceinfo) |
 | 5 | random_key | string |
 | 6 | client_version | string |
 | 7 | gen_access_token | bool |
@@ -1440,10 +1440,10 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | account_id | uint32 |
-| 3 | account | [Account](#Account) |
-| 4 | game_info | [GameConnectInfo](#GameConnectInfo) |
+| 3 | account | [Account](#account) |
+| 4 | game_info | [GameConnectInfo](#gameconnectinfo) |
 | 5 | has_unread_announcement | bool |
 | 6 | access_token | string |
 | 7 | signup_time | uint32 |
@@ -1456,7 +1456,7 @@ No fields
 | 1 | email | string |
 | 2 | password | string |
 | 3 | reconnect | bool |
-| 4 | device | [ClientDeviceInfo](#ClientDeviceInfo) |
+| 4 | device | [ClientDeviceInfo](#clientdeviceinfo) |
 | 5 | random_key | string |
 | 6 | client_version | string |
 | 7 | gen_access_token | bool |
@@ -1494,7 +1494,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | secure_token | string |
 
 ## ReqBindPhoneNumber
@@ -1518,7 +1518,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | phone_login | uint32 |
 
 ## ReqCreatePhoneLoginBind
@@ -1555,7 +1555,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | access_token | string |
 
 ## ReqOauth2Check
@@ -1569,7 +1569,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | has_account | bool |
 
 ## ReqOauth2Signup
@@ -1585,7 +1585,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 
 ## ReqOauth2Login
 
@@ -1594,7 +1594,7 @@ No fields
 | 1 | type | uint32 |
 | 2 | access_token | string |
 | 3 | reconnect | bool |
-| 4 | device | [ClientDeviceInfo](#ClientDeviceInfo) |
+| 4 | device | [ClientDeviceInfo](#clientdeviceinfo) |
 | 5 | random_key | string |
 | 6 | client_version | string |
 | 8 | currency_platforms | uint32 |
@@ -1619,7 +1619,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 
 ## ReqHeatBeat
 
@@ -1655,9 +1655,9 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | account | [Account](#Account) |
-| 3 | room | [Room](#Room) |
+| 1 | error | [Error](#error) |
+| 2 | account | [Account](#account) |
+| 3 | room | [Room](#room) |
 
 ## ReqCreateNickname
 
@@ -1683,23 +1683,23 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | room | [Room](#Room) |
+| 1 | error | [Error](#error) |
+| 2 | room | [Room](#room) |
 
 ## ReqCreateRoom
 
 | N | Field name | Field type |
 | --- | --- | --- |
 | 1 | player_count | uint32 |
-| 2 | mode | [GameMode](#GameMode) |
+| 2 | mode | [GameMode](#gamemode) |
 | 3 | public_live | bool |
 
 ## ResCreateRoom
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | room | [Room](#Room) |
+| 1 | error | [Error](#error) |
+| 2 | room | [Room](#room) |
 
 ## ReqJoinRoom
 
@@ -1711,8 +1711,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | room | [Room](#Room) |
+| 1 | error | [Error](#error) |
+| 2 | room | [Room](#room) |
 
 ## ReqRoomReady
 
@@ -1758,9 +1758,9 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | statistic_data | [AccountStatisticData](#AccountStatisticData) |
-| 3 | detail_data | [AccountDetailStatisticV2](#AccountDetailStatisticV2) |
+| 1 | error | [Error](#error) |
+| 2 | statistic_data | [AccountStatisticData](#accountstatisticdata) |
+| 3 | detail_data | [AccountDetailStatisticV2](#accountdetailstatisticv2) |
 
 ## ResAccountCharacterInfo
 
@@ -1779,8 +1779,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | update | [AccountUpdate](#AccountUpdate) |
+| 1 | error | [Error](#error) |
+| 2 | update | [AccountUpdate](#accountupdate) |
 
 ## ReqGameRecord
 
@@ -1792,8 +1792,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 3 | head | [RecordGame](#RecordGame) |
+| 1 | error | [Error](#error) |
+| 3 | head | [RecordGame](#recordgame) |
 | 4 | data | [bytes](#bytes) |
 | 5 | data_url | string |
 
@@ -1809,16 +1809,16 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | total_count | uint32 |
-| 3 | record_list | [RecordGame](#RecordGame) |
+| 3 | record_list | [RecordGame](#recordgame) |
 
 ## ResCollectedGameRecordList
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | record_list | [RecordCollectedData](#RecordCollectedData) |
+| 1 | error | [Error](#error) |
+| 2 | record_list | [RecordCollectedData](#recordcollecteddata) |
 | 3 | record_collect_limit | uint32 |
 
 ## ReqGameRecordsDetail
@@ -1831,8 +1831,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | record_list | [RecordGame](#RecordGame) |
+| 1 | error | [Error](#error) |
+| 2 | record_list | [RecordGame](#recordgame) |
 
 ## ReqAddCollectedGameRecord
 
@@ -1847,7 +1847,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 
 ## ReqRemoveCollectedGameRecord
 
@@ -1859,7 +1859,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 
 ## ReqChangeCollectedGameRecordRemarks
 
@@ -1872,7 +1872,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 
 ## ReqLevelLeaderboard
 
@@ -1884,8 +1884,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | items | [Item](#Item) |
+| 1 | error | [Error](#error) |
+| 2 | items | [Item](#item) |
 | 3 | self_rank | uint32 |
 
 ## ReqMultiAccountId
@@ -1898,23 +1898,23 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | players | [PlayerBaseView](#PlayerBaseView) |
+| 1 | error | [Error](#error) |
+| 2 | players | [PlayerBaseView](#playerbaseview) |
 
 ## ResFriendList
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | friends | [Friend](#Friend) |
+| 1 | error | [Error](#error) |
+| 2 | friends | [Friend](#friend) |
 | 3 | friend_max_count | uint32 |
 
 ## ResFriendApplyList
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | applies | [FriendApply](#FriendApply) |
+| 1 | error | [Error](#error) |
+| 2 | applies | [FriendApply](#friendapply) |
 
 ## ReqApplyFriend
 
@@ -1946,7 +1946,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | is_finished | bool |
 | 3 | match_accounts | uint32 |
 | 4 | decode_id | uint32 |
@@ -1961,8 +1961,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | states | [AccountActiveState](#AccountActiveState) |
+| 1 | error | [Error](#error) |
+| 2 | states | [AccountActiveState](#accountactivestate) |
 
 ## ReqSearchAccountById
 
@@ -1974,15 +1974,15 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | player | [PlayerBaseView](#PlayerBaseView) |
+| 1 | error | [Error](#error) |
+| 2 | player | [PlayerBaseView](#playerbaseview) |
 
 ## ResBagInfo
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | bag | [Bag](#Bag) |
+| 1 | error | [Error](#error) |
+| 2 | bag | [Bag](#bag) |
 
 ## ReqUseBagItem
 
@@ -2008,8 +2008,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | results | [OpenResult](#OpenResult) |
+| 1 | error | [Error](#error) |
+| 2 | results | [OpenResult](#openresult) |
 
 ## ReqComposeShard
 
@@ -2021,8 +2021,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | announcements | [Announcement](#Announcement) |
+| 1 | error | [Error](#error) |
+| 2 | announcements | [Announcement](#announcement) |
 | 3 | sort | uint32 |
 | 4 | read_list | uint32 |
 
@@ -2030,8 +2030,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | mails | [Mail](#Mail) |
+| 1 | error | [Error](#error) |
+| 2 | mails | [Mail](#mail) |
 
 ## ReqReadMail
 
@@ -2055,14 +2055,14 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | progresses | [AchievementProgress](#AchievementProgress) |
+| 1 | error | [Error](#error) |
+| 2 | progresses | [AchievementProgress](#achievementprogress) |
 
 ## ResTitleList
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | title_list | uint32 |
 
 ## ReqUseTitle
@@ -2088,7 +2088,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | datas | [Value](#Value) |
+| 1 | datas | [Value](#value) |
 | 2 | recharged_count | uint32 |
 
 ## ReqClientMessage
@@ -2108,8 +2108,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | matches | [CurrentMatchInfo](#CurrentMatchInfo) |
+| 1 | error | [Error](#error) |
+| 2 | matches | [CurrentMatchInfo](#currentmatchinfo) |
 
 ## ReqUserComplain
 
@@ -2128,15 +2128,15 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | has_gained | bool |
 
 ## ResDailyTask
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | progresses | [TaskProgress](#TaskProgress) |
+| 1 | error | [Error](#error) |
+| 2 | progresses | [TaskProgress](#taskprogress) |
 | 3 | has_refresh_count | bool |
 | 4 | max_daily_task_count | uint32 |
 | 5 | refresh_count | uint32 |
@@ -2151,8 +2151,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | progress | [TaskProgress](#TaskProgress) |
+| 1 | error | [Error](#error) |
+| 2 | progress | [TaskProgress](#taskprogress) |
 | 3 | refresh_count | uint32 |
 
 ## ReqUseGiftCode
@@ -2165,8 +2165,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 6 | rewards | [RewardSlot](#RewardSlot) |
+| 1 | error | [Error](#error) |
+| 6 | rewards | [RewardSlot](#rewardslot) |
 
 ## ReqSendClientMessage
 
@@ -2186,10 +2186,10 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | left_start_seconds | uint32 |
-| 3 | live_head | [GameLiveHead](#GameLiveHead) |
-| 4 | segments | [GameLiveSegmentUri](#GameLiveSegmentUri) |
+| 3 | live_head | [GameLiveHead](#gamelivehead) |
+| 4 | segments | [GameLiveSegmentUri](#gamelivesegmenturi) |
 | 5 | now_millisecond | uint32 |
 
 ## ReqGameLiveLeftSegment
@@ -2203,9 +2203,9 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | live_state | uint32 |
-| 4 | segments | [GameLiveSegmentUri](#GameLiveSegmentUri) |
+| 4 | segments | [GameLiveSegmentUri](#gamelivesegmenturi) |
 | 5 | now_millisecond | uint32 |
 | 6 | segment_end_millisecond | uint32 |
 
@@ -2219,14 +2219,14 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | live_list | [GameLiveHead](#GameLiveHead) |
+| 1 | error | [Error](#error) |
+| 2 | live_list | [GameLiveHead](#gamelivehead) |
 
 ## ResCommentSetting
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | comment_allow | uint32 |
 
 ## ReqUpdateCommentSetting
@@ -2245,7 +2245,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | comment_allow | uint32 |
 | 3 | comment_id_list | uint32 |
 | 4 | last_read_id | uint32 |
@@ -2261,8 +2261,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | comments | [CommentItem](#CommentItem) |
+| 1 | error | [Error](#error) |
+| 2 | comments | [CommentItem](#commentitem) |
 
 ## ReqLeaveComment
 
@@ -2288,7 +2288,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | notice | [RollingNotice](#RollingNotice) |
+| 1 | notice | [RollingNotice](#rollingnotice) |
 
 ## ResServerTime
 
@@ -2306,8 +2306,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | products | [BillingProduct](#BillingProduct) |
+| 1 | error | [Error](#error) |
+| 2 | products | [BillingProduct](#billingproduct) |
 
 ## ReqCreateBillingOrder
 
@@ -2322,7 +2322,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | order_id | string |
 
 ## ReqSolveGooglePlayOrder
@@ -2360,7 +2360,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | qrcode_buffer | string |
 | 3 | order_id | string |
 
@@ -2377,8 +2377,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | call_wechat_app_param | [CallWechatAppParam](#CallWechatAppParam) |
+| 1 | error | [Error](#error) |
+| 2 | call_wechat_app_param | [CallWechatAppParam](#callwechatappparam) |
 
 ## ReqCreateAlipayOrder
 
@@ -2394,7 +2394,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | alipay_url | string |
 
 ## ReqCreateAlipayScanOrder
@@ -2409,7 +2409,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | qrcode_buffer | string |
 | 3 | order_id | string |
 | 4 | qr_code | string |
@@ -2426,7 +2426,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | alipay_url | string |
 
 ## ReqCreateJPCreditCardOrder
@@ -2443,7 +2443,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | order_id | string |
 
 ## ReqCreateJPPaypalOrder
@@ -2460,7 +2460,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | order_id | string |
 
 ## ReqCreateJPAuOrder
@@ -2477,7 +2477,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | order_id | string |
 
 ## ReqCreateJPDocomoOrder
@@ -2494,7 +2494,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | order_id | string |
 
 ## ReqCreateJPWebMoneyOrder
@@ -2511,7 +2511,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | order_id | string |
 
 ## ReqCreateJPSoftbankOrder
@@ -2528,7 +2528,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | order_id | string |
 
 ## ReqCreateYostarOrder
@@ -2544,7 +2544,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | order_id | string |
 
 ## ReqCreateENPaypalOrder
@@ -2561,7 +2561,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | order_id | string |
 
 ## ReqCreateENJCBOrder
@@ -2578,7 +2578,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | order_id | string |
 
 ## ReqCreateENMasterCardOrder
@@ -2595,7 +2595,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | order_id | string |
 
 ## ReqCreateENVisaOrder
@@ -2612,7 +2612,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | order_id | string |
 
 ## ReqCreateENAlipayOrder
@@ -2629,7 +2629,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | order_id | string |
 
 ## ReqCreateDMMOrder
@@ -2644,7 +2644,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | order_id | string |
 | 3 | transaction_id | string |
 | 4 | dmm_user_id | string |
@@ -2666,7 +2666,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | order_id | string |
 
 ## ReqVerificationIAPOrder
@@ -2682,7 +2682,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 
 ## ReqCreateMyCardOrder
 
@@ -2696,7 +2696,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | auth_code | string |
 | 3 | order_id | string |
 
@@ -2719,8 +2719,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | results | [OpenResult](#OpenResult) |
+| 1 | error | [Error](#error) |
+| 2 | results | [OpenResult](#openresult) |
 | 3 | total_open_count | uint32 |
 | 4 | faith_count | uint32 |
 
@@ -2735,7 +2735,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | chest_id | uint32 |
 | 3 | consume_count | uint32 |
 | 4 | faith_count | uint32 |
@@ -2744,7 +2744,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | sign_in_days | uint32 |
 
 ## ReqDoActivitySignIn
@@ -2757,16 +2757,16 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | rewards | [RewardData](#RewardData) |
+| 1 | error | [Error](#error) |
+| 2 | rewards | [RewardData](#rewarddata) |
 | 3 | sign_in_count | uint32 |
 
 ## ResCharacterInfo
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | characters | [Character](#Character) |
+| 1 | error | [Error](#error) |
+| 2 | characters | [Character](#character) |
 | 3 | skins | uint32 |
 | 4 | main_character_id | uint32 |
 | 5 | send_gift_count | uint32 |
@@ -2800,13 +2800,13 @@ No fields
 | N | Field name | Field type |
 | --- | --- | --- |
 | 1 | character_id | uint32 |
-| 2 | gifts | [Gift](#Gift) |
+| 2 | gifts | [Gift](#gift) |
 
 ## ResSendGiftToCharacter
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | level | uint32 |
 | 3 | exp | uint32 |
 
@@ -2814,14 +2814,14 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | sells | [Item](#Item) |
+| 1 | sells | [Item](#item) |
 
 ## ResCommonView
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | slots | [Slot](#Slot) |
+| 1 | error | [Error](#error) |
+| 2 | slots | [Slot](#slot) |
 
 ## ReqChangeCommonView
 
@@ -2834,7 +2834,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | views | [ViewSlot](#ViewSlot) |
+| 1 | views | [ViewSlot](#viewslot) |
 | 2 | save_index | uint32 |
 | 3 | is_use | uint32 |
 
@@ -2848,15 +2848,15 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | views | [ViewSlot](#ViewSlot) |
+| 1 | views | [ViewSlot](#viewslot) |
 
 ## ResAllcommonViews
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | views | [Views](#Views) |
+| 1 | views | [Views](#views) |
 | 2 | use | uint32 |
-| 3 | error | [Error](#Error) |
+| 3 | error | [Error](#error) |
 
 ## ReqUseCommonView
 
@@ -2874,8 +2874,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | character | [Character](#Character) |
+| 1 | error | [Error](#error) |
+| 2 | character | [Character](#character) |
 
 ## ReqFinishedEnding
 
@@ -2895,8 +2895,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | shop_info | [ShopInfo](#ShopInfo) |
+| 1 | error | [Error](#error) |
+| 2 | shop_info | [ShopInfo](#shopinfo) |
 
 ## ReqBuyFromShop
 
@@ -2904,15 +2904,15 @@ No fields
 | --- | --- | --- |
 | 1 | goods_id | uint32 |
 | 2 | count | uint32 |
-| 3 | bill_short_cut | [BillShortcut](#BillShortcut) |
+| 3 | bill_short_cut | [BillShortcut](#billshortcut) |
 | 4 | deal_price | uint32 |
 
 ## ResBuyFromShop
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | rewards | [RewardSlot](#RewardSlot) |
+| 1 | error | [Error](#error) |
+| 2 | rewards | [RewardSlot](#rewardslot) |
 
 ## ReqBuyFromZHP
 
@@ -2931,7 +2931,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | resource_id | uint32 |
 | 3 | resource_count | uint32 |
 
@@ -2946,14 +2946,14 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | zhp | [ZHPShop](#ZHPShop) |
+| 1 | error | [Error](#error) |
+| 2 | zhp | [ZHPShop](#zhpshop) |
 
 ## ResMonthTicketInfo
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | month_ticket_info | [MonthTicketInfo](#MonthTicketInfo) |
+| 1 | month_ticket_info | [MonthTicketInfo](#monthticketinfo) |
 
 ## ReqExchangeCurrency
 
@@ -2966,20 +2966,20 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | settings | [ServerSettings](#ServerSettings) |
+| 1 | settings | [ServerSettings](#serversettings) |
 
 ## ResAccountSettings
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | settings | [AccountSetting](#AccountSetting) |
+| 1 | error | [Error](#error) |
+| 2 | settings | [AccountSetting](#accountsetting) |
 
 ## ReqUpdateAccountSettings
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | setting | [AccountSetting](#AccountSetting) |
+| 1 | setting | [AccountSetting](#accountsetting) |
 
 ## ResModNicknameTime
 
@@ -2991,9 +2991,9 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | recharged_list | uint32 |
-| 3 | faiths | [MiscFaithData](#MiscFaithData) |
+| 3 | faiths | [MiscFaithData](#miscfaithdata) |
 
 ## ReqModifySignature
 
@@ -3005,7 +3005,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | is_authed | bool |
 | 3 | country | string |
 
@@ -3020,7 +3020,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | gained_vip_levels | uint32 |
 
 ## ReqGainVipReward
@@ -3040,9 +3040,9 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | contests | [CustomizedContestBase](#CustomizedContestBase) |
-| 3 | follow_contests | [CustomizedContestBase](#CustomizedContestBase) |
+| 1 | error | [Error](#error) |
+| 2 | contests | [CustomizedContestBase](#customizedcontestbase) |
+| 3 | follow_contests | [CustomizedContestBase](#customizedcontestbase) |
 
 ## ReqFetchCustomizedContestExtendInfo
 
@@ -3054,8 +3054,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | extend_list | [CustomizedContestExtend](#CustomizedContestExtend) |
+| 1 | error | [Error](#error) |
+| 2 | extend_list | [CustomizedContestExtend](#customizedcontestextend) |
 
 ## ReqFetchCustomizedContestAuthInfo
 
@@ -3067,7 +3067,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | observer_level | uint32 |
 
 ## ReqEnterCustomizedContest
@@ -3080,9 +3080,9 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | detail_info | [CustomizedContestDetail](#CustomizedContestDetail) |
-| 3 | player_report | [CustomizedContestPlayerReport](#CustomizedContestPlayerReport) |
+| 1 | error | [Error](#error) |
+| 2 | detail_info | [CustomizedContestDetail](#customizedcontestdetail) |
+| 3 | player_report | [CustomizedContestPlayerReport](#customizedcontestplayerreport) |
 | 4 | is_followed | bool |
 
 ## ReqFetchCustomizedContestOnlineInfo
@@ -3095,7 +3095,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | online_player | uint32 |
 
 ## ReqFetchCustomizedContestByContestId
@@ -3108,8 +3108,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | contest_info | [CustomizedContestAbstract](#CustomizedContestAbstract) |
+| 1 | error | [Error](#error) |
+| 2 | contest_info | [CustomizedContestAbstract](#customizedcontestabstract) |
 
 ## ReqStartCustomizedContest
 
@@ -3127,7 +3127,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | chat_history | [bytes](#bytes) |
 
 ## ReqSayChatMessage
@@ -3146,8 +3146,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | live_list | [GameLiveHead](#GameLiveHead) |
+| 1 | error | [Error](#error) |
+| 2 | live_list | [GameLiveHead](#gamelivehead) |
 
 ## ReqFetchCustomizedContestGameRecords
 
@@ -3160,9 +3160,9 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | next_index | uint32 |
-| 3 | record_list | [RecordGame](#RecordGame) |
+| 3 | record_list | [RecordGame](#recordgame) |
 
 ## ReqTargetCustomizedContest
 
@@ -3174,23 +3174,23 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | activities | [Activity](#Activity) |
+| 1 | error | [Error](#error) |
+| 2 | activities | [Activity](#activity) |
 
 ## ResAccountActivityData
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | exchange_records | [ExchangeRecord](#ExchangeRecord) |
-| 3 | task_progress_list | [TaskProgress](#TaskProgress) |
-| 4 | accumulated_point_list | [ActivityAccumulatedPointData](#ActivityAccumulatedPointData) |
-| 5 | rank_data_list | [ActivityRankPointData](#ActivityRankPointData) |
-| 6 | flip_task_progress_list | [TaskProgress](#TaskProgress) |
-| 7 | sign_in_data | [ActivitySignInData](#ActivitySignInData) |
-| 8 | richman_data | [ActivityRichmanData](#ActivityRichmanData) |
-| 9 | period_task_progress_list | [TaskProgress](#TaskProgress) |
-| 10 | random_task_progress_list | [TaskProgress](#TaskProgress) |
+| 1 | error | [Error](#error) |
+| 2 | exchange_records | [ExchangeRecord](#exchangerecord) |
+| 3 | task_progress_list | [TaskProgress](#taskprogress) |
+| 4 | accumulated_point_list | [ActivityAccumulatedPointData](#activityaccumulatedpointdata) |
+| 5 | rank_data_list | [ActivityRankPointData](#activityrankpointdata) |
+| 6 | flip_task_progress_list | [TaskProgress](#taskprogress) |
+| 7 | sign_in_data | [ActivitySignInData](#activitysignindata) |
+| 8 | richman_data | [ActivityRichmanData](#activityrichmandata) |
+| 9 | period_task_progress_list | [TaskProgress](#taskprogress) |
+| 10 | random_task_progress_list | [TaskProgress](#taskprogress) |
 
 ## ReqExchangeActivityItem
 
@@ -3202,8 +3202,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | execute_reward | [ExecuteReward](#ExecuteReward) |
+| 1 | error | [Error](#error) |
+| 2 | execute_reward | [ExecuteReward](#executereward) |
 
 ## ReqCompleteActivityTask
 
@@ -3222,7 +3222,7 @@ No fields
 | N | Field name | Field type |
 | --- | --- | --- |
 | 1 | count | uint32 |
-| 2 | error | [Error](#Error) |
+| 2 | error | [Error](#error) |
 
 ## ReqFetchActivityFlipInfo
 
@@ -3236,7 +3236,7 @@ No fields
 | --- | --- | --- |
 | 1 | rewards | uint32 |
 | 2 | count | uint32 |
-| 3 | error | [Error](#Error) |
+| 3 | error | [Error](#error) |
 
 ## ReqGainAccumulatedPointActivityReward
 
@@ -3255,8 +3255,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | items | [Item](#Item) |
+| 1 | error | [Error](#error) |
+| 2 | items | [Item](#item) |
 | 3 | last_refresh_time | uint32 |
 
 ## ReqGainRankPointReward
@@ -3276,17 +3276,17 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | paths | [PathData](#PathData) |
+| 1 | paths | [PathData](#pathdata) |
 | 2 | dice | uint32 |
 | 3 | location | uint32 |
 | 4 | finished_count | uint32 |
 | 5 | step | uint32 |
-| 6 | buff | [BuffData](#BuffData) |
+| 6 | buff | [BuffData](#buffdata) |
 | 7 | bank_save | uint32 |
 | 8 | chest_position | uint32 |
 | 9 | exp | uint32 |
 | 10 | bank_save_add | uint32 |
-| 11 | error | [Error](#Error) |
+| 11 | error | [Error](#error) |
 
 ## ReqRichmanSpecialMove
 
@@ -3305,8 +3305,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | items | [ItemData](#ItemData) |
-| 2 | error | [Error](#Error) |
+| 1 | items | [ItemData](#itemdata) |
+| 2 | error | [Error](#error) |
 
 ## ReqCreateGameObserveAuth
 
@@ -3318,7 +3318,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | token | string |
 | 3 | location | string |
 
@@ -3332,7 +3332,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | ttl | uint32 |
 
 ## ActionMJStart
@@ -3366,16 +3366,16 @@ No fields
 | 4 | tiles | string |
 | 5 | dora | string |
 | 6 | scores | int32 |
-| 7 | operation | [OptionalOperationList](#OptionalOperationList) |
+| 7 | operation | [OptionalOperationList](#optionaloperationlist) |
 | 8 | liqibang | uint32 |
-| 9 | tingpais0 | [TingPaiDiscardInfo](#TingPaiDiscardInfo) |
-| 10 | tingpais1 | [TingPaiInfo](#TingPaiInfo) |
+| 9 | tingpais0 | [TingPaiDiscardInfo](#tingpaidiscardinfo) |
+| 10 | tingpais1 | [TingPaiInfo](#tingpaiinfo) |
 | 11 | al | bool |
 | 12 | md5 | string |
 | 13 | left_tile_count | uint32 |
 | 14 | doras | string |
-| 15 | opens | [NewRoundOpenedTiles](#NewRoundOpenedTiles) |
-| 16 | muyu | [MuyuInfo](#MuyuInfo) |
+| 15 | opens | [NewRoundOpenedTiles](#newroundopenedtiles) |
+| 16 | muyu | [MuyuInfo](#muyuinfo) |
 
 ## RecordNewRound
 
@@ -3391,14 +3391,14 @@ No fields
 | 8 | tiles1 | string |
 | 9 | tiles2 | string |
 | 10 | tiles3 | string |
-| 11 | tingpai | [TingPai](#TingPai) |
-| 12 | operation | [OptionalOperationList](#OptionalOperationList) |
+| 11 | tingpai | [TingPai](#tingpai) |
+| 12 | operation | [OptionalOperationList](#optionaloperationlist) |
 | 13 | md5 | string |
 | 14 | paishan | string |
 | 15 | left_tile_count | uint32 |
 | 16 | doras | string |
-| 17 | opens | [NewRoundOpenedTiles](#NewRoundOpenedTiles) |
-| 18 | muyu | [MuyuInfo](#MuyuInfo) |
+| 17 | opens | [NewRoundOpenedTiles](#newroundopenedtiles) |
+| 18 | muyu | [MuyuInfo](#muyuinfo) |
 
 ## GameSnapshot
 
@@ -3412,7 +3412,7 @@ No fields
 | 6 | hands | string |
 | 7 | doras | string |
 | 8 | liqibang | uint32 |
-| 9 | players | [PlayerSnapshot](#PlayerSnapshot) |
+| 9 | players | [PlayerSnapshot](#playersnapshot) |
 | 10 | zhenting | bool |
 
 ## ActionPrototype
@@ -3441,7 +3441,7 @@ No fields
 | N | Field name | Field type |
 | --- | --- | --- |
 | 1 | seat | uint32 |
-| 2 | operation_list | [OptionalOperation](#OptionalOperation) |
+| 2 | operation_list | [OptionalOperation](#optionaloperation) |
 | 4 | time_add | uint32 |
 | 5 | time_fixed | uint32 |
 
@@ -3476,7 +3476,7 @@ No fields
 | 9 | li_doras | string |
 | 10 | yiman | bool |
 | 11 | count | uint32 |
-| 12 | fans | [FanInfo](#FanInfo) |
+| 12 | fans | [FanInfo](#faninfo) |
 | 13 | fu | uint32 |
 | 14 | title | string |
 | 15 | point_rong | uint32 |
@@ -3505,7 +3505,7 @@ No fields
 | --- | --- | --- |
 | 1 | tile | string |
 | 2 | zhenting | bool |
-| 3 | infos | [TingPaiInfo](#TingPaiInfo) |
+| 3 | infos | [TingPaiInfo](#tingpaiinfo) |
 
 ## GameEnd
 
@@ -3520,14 +3520,14 @@ No fields
 | 1 | seat | uint32 |
 | 2 | tile | string |
 | 3 | is_liqi | bool |
-| 4 | operation | [OptionalOperationList](#OptionalOperationList) |
+| 4 | operation | [OptionalOperationList](#optionaloperationlist) |
 | 5 | moqie | bool |
 | 6 | zhenting | bool |
-| 7 | tingpais | [TingPaiInfo](#TingPaiInfo) |
+| 7 | tingpais | [TingPaiInfo](#tingpaiinfo) |
 | 8 | doras | string |
 | 9 | is_wliqi | bool |
 | 10 | tile_state | uint32 |
-| 11 | muyu | [MuyuInfo](#MuyuInfo) |
+| 11 | muyu | [MuyuInfo](#muyuinfo) |
 
 ## RecordDiscardTile
 
@@ -3538,12 +3538,12 @@ No fields
 | 3 | is_liqi | bool |
 | 5 | moqie | bool |
 | 6 | zhenting | bool |
-| 7 | tingpais | [TingPaiInfo](#TingPaiInfo) |
+| 7 | tingpais | [TingPaiInfo](#tingpaiinfo) |
 | 8 | doras | string |
 | 9 | is_wliqi | bool |
-| 10 | operations | [OptionalOperationList](#OptionalOperationList) |
+| 10 | operations | [OptionalOperationList](#optionaloperationlist) |
 | 11 | tile_state | uint32 |
-| 12 | muyu | [MuyuInfo](#MuyuInfo) |
+| 12 | muyu | [MuyuInfo](#muyuinfo) |
 
 ## ActionDealTile
 
@@ -3552,13 +3552,13 @@ No fields
 | 1 | seat | uint32 |
 | 2 | tile | string |
 | 3 | left_tile_count | uint32 |
-| 4 | operation | [OptionalOperationList](#OptionalOperationList) |
-| 5 | liqi | [LiQiSuccess](#LiQiSuccess) |
+| 4 | operation | [OptionalOperationList](#optionaloperationlist) |
+| 5 | liqi | [LiQiSuccess](#liqisuccess) |
 | 6 | doras | string |
 | 7 | zhenting | bool |
-| 8 | tingpais | [TingPaiDiscardInfo](#TingPaiDiscardInfo) |
+| 8 | tingpais | [TingPaiDiscardInfo](#tingpaidiscardinfo) |
 | 9 | tile_state | uint32 |
-| 10 | muyu | [MuyuInfo](#MuyuInfo) |
+| 10 | muyu | [MuyuInfo](#muyuinfo) |
 
 ## RecordDealTile
 
@@ -3567,12 +3567,12 @@ No fields
 | 1 | seat | uint32 |
 | 2 | tile | string |
 | 3 | left_tile_count | uint32 |
-| 5 | liqi | [LiQiSuccess](#LiQiSuccess) |
+| 5 | liqi | [LiQiSuccess](#liqisuccess) |
 | 6 | doras | string |
 | 7 | zhenting | bool |
-| 8 | operation | [OptionalOperationList](#OptionalOperationList) |
+| 8 | operation | [OptionalOperationList](#optionaloperationlist) |
 | 9 | tile_state | uint32 |
-| 11 | muyu | [MuyuInfo](#MuyuInfo) |
+| 11 | muyu | [MuyuInfo](#muyuinfo) |
 
 ## ActionChiPengGang
 
@@ -3582,12 +3582,12 @@ No fields
 | 2 | type | uint32 |
 | 3 | tiles | string |
 | 4 | froms | uint32 |
-| 5 | liqi | [LiQiSuccess](#LiQiSuccess) |
-| 6 | operation | [OptionalOperationList](#OptionalOperationList) |
+| 5 | liqi | [LiQiSuccess](#liqisuccess) |
+| 6 | operation | [OptionalOperationList](#optionaloperationlist) |
 | 7 | zhenting | bool |
-| 8 | tingpais | [TingPaiDiscardInfo](#TingPaiDiscardInfo) |
+| 8 | tingpais | [TingPaiDiscardInfo](#tingpaidiscardinfo) |
 | 9 | tile_states | uint32 |
-| 10 | muyu | [MuyuInfo](#MuyuInfo) |
+| 10 | muyu | [MuyuInfo](#muyuinfo) |
 
 ## RecordChiPengGang
 
@@ -3597,11 +3597,11 @@ No fields
 | 2 | type | uint32 |
 | 3 | tiles | string |
 | 4 | froms | uint32 |
-| 5 | liqi | [LiQiSuccess](#LiQiSuccess) |
+| 5 | liqi | [LiQiSuccess](#liqisuccess) |
 | 7 | zhenting | bool |
-| 8 | operation | [OptionalOperationList](#OptionalOperationList) |
+| 8 | operation | [OptionalOperationList](#optionaloperationlist) |
 | 9 | tile_states | uint32 |
-| 10 | muyu | [MuyuInfo](#MuyuInfo) |
+| 10 | muyu | [MuyuInfo](#muyuinfo) |
 
 ## ActionAnGangAddGang
 
@@ -3610,11 +3610,11 @@ No fields
 | 1 | seat | uint32 |
 | 2 | type | uint32 |
 | 3 | tiles | string |
-| 4 | operation | [OptionalOperationList](#OptionalOperationList) |
+| 4 | operation | [OptionalOperationList](#optionaloperationlist) |
 | 6 | doras | string |
 | 7 | zhenting | bool |
-| 8 | tingpais | [TingPaiInfo](#TingPaiInfo) |
-| 9 | muyu | [MuyuInfo](#MuyuInfo) |
+| 8 | tingpais | [TingPaiInfo](#tingpaiinfo) |
+| 9 | muyu | [MuyuInfo](#muyuinfo) |
 
 ## RecordAnGangAddGang
 
@@ -3624,21 +3624,21 @@ No fields
 | 2 | type | uint32 |
 | 3 | tiles | string |
 | 6 | doras | string |
-| 7 | operations | [OptionalOperationList](#OptionalOperationList) |
-| 8 | muyu | [MuyuInfo](#MuyuInfo) |
+| 7 | operations | [OptionalOperationList](#optionaloperationlist) |
+| 8 | muyu | [MuyuInfo](#muyuinfo) |
 
 ## ActionBaBei
 
 | N | Field name | Field type |
 | --- | --- | --- |
 | 1 | seat | uint32 |
-| 4 | operation | [OptionalOperationList](#OptionalOperationList) |
+| 4 | operation | [OptionalOperationList](#optionaloperationlist) |
 | 6 | doras | string |
 | 7 | zhenting | bool |
-| 8 | tingpais | [TingPaiInfo](#TingPaiInfo) |
+| 8 | tingpais | [TingPaiInfo](#tingpaiinfo) |
 | 9 | moqie | bool |
 | 10 | tile_state | uint32 |
-| 11 | muyu | [MuyuInfo](#MuyuInfo) |
+| 11 | muyu | [MuyuInfo](#muyuinfo) |
 
 ## RecordBaBei
 
@@ -3646,60 +3646,60 @@ No fields
 | --- | --- | --- |
 | 1 | seat | uint32 |
 | 6 | doras | string |
-| 7 | operations | [OptionalOperationList](#OptionalOperationList) |
+| 7 | operations | [OptionalOperationList](#optionaloperationlist) |
 | 8 | moqie | bool |
 | 10 | tile_state | uint32 |
-| 11 | muyu | [MuyuInfo](#MuyuInfo) |
+| 11 | muyu | [MuyuInfo](#muyuinfo) |
 
 ## ActionHule
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | hules | [HuleInfo](#HuleInfo) |
+| 1 | hules | [HuleInfo](#huleinfo) |
 | 2 | old_scores | int32 |
 | 3 | delta_scores | int32 |
 | 4 | wait_timeout | uint32 |
 | 5 | scores | int32 |
-| 6 | gameend | [GameEnd](#GameEnd) |
+| 6 | gameend | [GameEnd](#gameend) |
 | 7 | doras | string |
-| 8 | muyu | [MuyuInfo](#MuyuInfo) |
+| 8 | muyu | [MuyuInfo](#muyuinfo) |
 
 ## RecordHule
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | hules | [HuleInfo](#HuleInfo) |
+| 1 | hules | [HuleInfo](#huleinfo) |
 | 2 | old_scores | int32 |
 | 3 | delta_scores | int32 |
 | 4 | wait_timeout | uint32 |
 | 5 | scores | int32 |
-| 6 | gameend | [GameEnd](#GameEnd) |
+| 6 | gameend | [GameEnd](#gameend) |
 | 7 | doras | string |
-| 8 | muyu | [MuyuInfo](#MuyuInfo) |
+| 8 | muyu | [MuyuInfo](#muyuinfo) |
 
 ## ActionLiuJu
 
 | N | Field name | Field type |
 | --- | --- | --- |
 | 1 | type | uint32 |
-| 2 | gameend | [GameEnd](#GameEnd) |
+| 2 | gameend | [GameEnd](#gameend) |
 | 3 | seat | uint32 |
 | 4 | tiles | string |
-| 5 | liqi | [LiQiSuccess](#LiQiSuccess) |
+| 5 | liqi | [LiQiSuccess](#liqisuccess) |
 | 6 | allplayertiles | string |
-| 7 | muyu | [MuyuInfo](#MuyuInfo) |
+| 7 | muyu | [MuyuInfo](#muyuinfo) |
 
 ## RecordLiuJu
 
 | N | Field name | Field type |
 | --- | --- | --- |
 | 1 | type | uint32 |
-| 2 | gameend | [GameEnd](#GameEnd) |
+| 2 | gameend | [GameEnd](#gameend) |
 | 3 | seat | uint32 |
 | 4 | tiles | string |
-| 5 | liqi | [LiQiSuccess](#LiQiSuccess) |
+| 5 | liqi | [LiQiSuccess](#liqisuccess) |
 | 6 | allplayertiles | string |
-| 7 | muyu | [MuyuInfo](#MuyuInfo) |
+| 7 | muyu | [MuyuInfo](#muyuinfo) |
 
 ## NoTilePlayerInfo
 
@@ -3707,7 +3707,7 @@ No fields
 | --- | --- | --- |
 | 3 | tingpai | bool |
 | 4 | hand | string |
-| 5 | tings | [TingPaiInfo](#TingPaiInfo) |
+| 5 | tings | [TingPaiInfo](#tingpaiinfo) |
 
 ## NoTileScoreInfo
 
@@ -3726,20 +3726,20 @@ No fields
 | N | Field name | Field type |
 | --- | --- | --- |
 | 1 | liujumanguan | bool |
-| 2 | players | [NoTilePlayerInfo](#NoTilePlayerInfo) |
-| 3 | scores | [NoTileScoreInfo](#NoTileScoreInfo) |
+| 2 | players | [NoTilePlayerInfo](#notileplayerinfo) |
+| 3 | scores | [NoTileScoreInfo](#notilescoreinfo) |
 | 4 | gameend | bool |
-| 5 | muyu | [MuyuInfo](#MuyuInfo) |
+| 5 | muyu | [MuyuInfo](#muyuinfo) |
 
 ## RecordNoTile
 
 | N | Field name | Field type |
 | --- | --- | --- |
 | 1 | liujumanguan | bool |
-| 2 | players | [NoTilePlayerInfo](#NoTilePlayerInfo) |
-| 3 | scores | [NoTileScoreInfo](#NoTileScoreInfo) |
+| 2 | players | [NoTilePlayerInfo](#notileplayerinfo) |
+| 3 | scores | [NoTileScoreInfo](#notilescoreinfo) |
 | 4 | gameend | bool |
-| 5 | muyu | [MuyuInfo](#MuyuInfo) |
+| 5 | muyu | [MuyuInfo](#muyuinfo) |
 
 ## PlayerLeaving
 
@@ -3749,23 +3749,23 @@ No fields
 
 ## FastTest
 
-* authGame([ResAuthGame](#ResAuthGame) return [ReqAuthGame](#ReqAuthGame)
-* enterGame([ResEnterGame](#ResEnterGame) return [ReqCommon](#ReqCommon)
-* syncGame([ResSyncGame](#ResSyncGame) return [ReqSyncGame](#ReqSyncGame)
-* finishSyncGame([ResCommon](#ResCommon) return [ReqCommon](#ReqCommon)
-* terminateGame([ResCommon](#ResCommon) return [ReqCommon](#ReqCommon)
-* inputOperation([ResCommon](#ResCommon) return [ReqSelfOperation](#ReqSelfOperation)
-* inputChiPengGang([ResCommon](#ResCommon) return [ReqChiPengGang](#ReqChiPengGang)
-* confirmNewRound([ResCommon](#ResCommon) return [ReqCommon](#ReqCommon)
-* broadcastInGame([ResCommon](#ResCommon) return [ReqBroadcastInGame](#ReqBroadcastInGame)
-* inputGameGMCommand([ResCommon](#ResCommon) return [ReqGMCommandInGaming](#ReqGMCommandInGaming)
-* fetchGamePlayerState([ResGamePlayerState](#ResGamePlayerState) return [ReqCommon](#ReqCommon)
-* checkNetworkDelay([ResCommon](#ResCommon) return [ReqCommon](#ReqCommon)
-* clearLeaving([ResCommon](#ResCommon) return [ReqCommon](#ReqCommon)
-* voteGameEnd([ResGameEndVote](#ResGameEndVote) return [ReqVoteGameEnd](#ReqVoteGameEnd)
-* authObserve([ResCommon](#ResCommon) return [ReqAuthObserve](#ReqAuthObserve)
-* startObserve([ResStartObserve](#ResStartObserve) return [ReqCommon](#ReqCommon)
-* stopObserve([ResCommon](#ResCommon) return [ReqCommon](#ReqCommon)
+* authGame([ResAuthGame](#resauthgame) return [ReqAuthGame](#reqauthgame)
+* enterGame([ResEnterGame](#resentergame) return [ReqCommon](#reqcommon)
+* syncGame([ResSyncGame](#ressyncgame) return [ReqSyncGame](#reqsyncgame)
+* finishSyncGame([ResCommon](#rescommon) return [ReqCommon](#reqcommon)
+* terminateGame([ResCommon](#rescommon) return [ReqCommon](#reqcommon)
+* inputOperation([ResCommon](#rescommon) return [ReqSelfOperation](#reqselfoperation)
+* inputChiPengGang([ResCommon](#rescommon) return [ReqChiPengGang](#reqchipenggang)
+* confirmNewRound([ResCommon](#rescommon) return [ReqCommon](#reqcommon)
+* broadcastInGame([ResCommon](#rescommon) return [ReqBroadcastInGame](#reqbroadcastingame)
+* inputGameGMCommand([ResCommon](#rescommon) return [ReqGMCommandInGaming](#reqgmcommandingaming)
+* fetchGamePlayerState([ResGamePlayerState](#resgameplayerstate) return [ReqCommon](#reqcommon)
+* checkNetworkDelay([ResCommon](#rescommon) return [ReqCommon](#reqcommon)
+* clearLeaving([ResCommon](#rescommon) return [ReqCommon](#reqcommon)
+* voteGameEnd([ResGameEndVote](#resgameendvote) return [ReqVoteGameEnd](#reqvotegameend)
+* authObserve([ResCommon](#rescommon) return [ReqAuthObserve](#reqauthobserve)
+* startObserve([ResStartObserve](#resstartobserve) return [ReqCommon](#reqcommon)
+* stopObserve([ResCommon](#rescommon) return [ReqCommon](#reqcommon)
 ## ReqAuthGame
 
 | N | Field name | Field type |
@@ -3778,19 +3778,19 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | players | [PlayerGameView](#PlayerGameView) |
+| 1 | error | [Error](#error) |
+| 2 | players | [PlayerGameView](#playergameview) |
 | 3 | seat_list | uint32 |
 | 4 | is_game_start | bool |
-| 5 | game_config | [GameConfig](#GameConfig) |
+| 5 | game_config | [GameConfig](#gameconfig) |
 | 6 | ready_id_list | uint32 |
 
 ## GameRestore
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | snapshot | [GameSnapshot](#GameSnapshot) |
-| 2 | actions | [ActionPrototype](#ActionPrototype) |
+| 1 | snapshot | [GameSnapshot](#gamesnapshot) |
+| 2 | actions | [ActionPrototype](#actionprototype) |
 | 3 | passed_waiting_time | uint32 |
 | 4 | game_state | uint32 |
 | 5 | start_time | uint32 |
@@ -3800,10 +3800,10 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | is_end | bool |
 | 3 | step | uint32 |
-| 4 | game_restore | [GameRestore](#GameRestore) |
+| 4 | game_restore | [GameRestore](#gamerestore) |
 
 ## ReqSyncGame
 
@@ -3816,10 +3816,10 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
+| 1 | error | [Error](#error) |
 | 2 | is_end | bool |
 | 3 | step | uint32 |
-| 4 | game_restore | [GameRestore](#GameRestore) |
+| 4 | game_restore | [GameRestore](#gamerestore) |
 
 ## ReqSelfOperation
 
@@ -3859,8 +3859,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | error | [Error](#Error) |
-| 2 | state_list | [GamePlayerState](#GamePlayerState) |
+| 1 | error | [Error](#error) |
+| 2 | state_list | [GamePlayerState](#gameplayerstate) |
 
 ## ReqVoteGameEnd
 
@@ -3874,7 +3874,7 @@ No fields
 | --- | --- | --- |
 | 1 | success | bool |
 | 2 | vote_cd_end_time | uint32 |
-| 3 | error | [Error](#Error) |
+| 3 | error | [Error](#error) |
 
 ## ReqAuthObserve
 
@@ -3886,8 +3886,8 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | head | [GameLiveHead](#GameLiveHead) |
-| 2 | passed | [GameLiveSegment](#GameLiveSegment) |
+| 1 | head | [GameLiveHead](#gamelivehead) |
+| 2 | passed | [GameLiveSegment](#gamelivesegment) |
 
 ## NotifyNewGame
 
@@ -3913,7 +3913,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | result | [GameEndResult](#GameEndResult) |
+| 1 | result | [GameEndResult](#gameendresult) |
 
 ## NotifyGameTerminate
 
@@ -3926,14 +3926,14 @@ No fields
 | N | Field name | Field type |
 | --- | --- | --- |
 | 1 | seat | uint32 |
-| 2 | state | [GamePlayerState](#GamePlayerState) |
+| 2 | state | [GamePlayerState](#gameplayerstate) |
 
 ## NotifyAccountLevelChange
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | origin | [AccountLevel](#AccountLevel) |
-| 2 | final | [AccountLevel](#AccountLevel) |
+| 1 | origin | [AccountLevel](#accountlevel) |
+| 2 | final | [AccountLevel](#accountlevel) |
 | 3 | type | uint32 |
 
 ## NotifyGameFinishReward
@@ -3941,28 +3941,28 @@ No fields
 | N | Field name | Field type |
 | --- | --- | --- |
 | 1 | mode_id | uint32 |
-| 2 | level_change | [LevelChange](#LevelChange) |
-| 3 | match_chest | [MatchChest](#MatchChest) |
-| 4 | main_character | [MainCharacter](#MainCharacter) |
-| 5 | character_gift | [CharacterGift](#CharacterGift) |
+| 2 | level_change | [LevelChange](#levelchange) |
+| 3 | match_chest | [MatchChest](#matchchest) |
+| 4 | main_character | [MainCharacter](#maincharacter) |
+| 5 | character_gift | [CharacterGift](#charactergift) |
 
 ## NotifyActivityReward
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | activity_reward | [ActivityReward](#ActivityReward) |
+| 1 | activity_reward | [ActivityReward](#activityreward) |
 
 ## NotifyActivityPoint
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | activity_points | [ActivityPoint](#ActivityPoint) |
+| 1 | activity_points | [ActivityPoint](#activitypoint) |
 
 ## NotifyLeaderboardPoint
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | leaderboard_points | [LeaderboardPoint](#LeaderboardPoint) |
+| 1 | leaderboard_points | [LeaderboardPoint](#leaderboardpoint) |
 
 ## NotifyGamePause
 
@@ -3974,7 +3974,7 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | results | [VoteResult](#VoteResult) |
+| 1 | results | [VoteResult](#voteresult) |
 | 2 | start_time | uint32 |
 | 3 | duration_time | uint32 |
 
@@ -3982,5 +3982,5 @@ No fields
 
 | N | Field name | Field type |
 | --- | --- | --- |
-| 1 | unit | [GameLiveUnit](#GameLiveUnit) |
+| 1 | unit | [GameLiveUnit](#gameliveunit) |
 
